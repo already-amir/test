@@ -1,18 +1,21 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-LiquidCrystal_I2C lcd(0x27, 16, 2); // آدرس I2C LCD ممکن است 0x3F باشد، اگر چیزی نمایش نداد تغییرش بده
+LiquidCrystal_I2C lcd(0x27, 16, 2); 
 
-// پین‌های دکمه‌ها
+
 #define BTN_UP     12
 #define BTN_DOWN   13
 #define BTN_OK     14
 #define BTN_BACK   27
 
-// ساختار منوها
+
 enum MenuState {
   MENU_MAIN,
   MENU_START,
+  MENU_PAUSE,
+  END_SUCCESS,
+  END_UNSUCCESS,
   MENU_SETTINGS,
   MENU_MANUAL,
   MENU_INFO,
@@ -24,10 +27,10 @@ enum MenuState {
 };
 
 MenuState currentMenu = MENU_MAIN;
-int selectedItem = 0; // برای پیمایش بین آیتم‌ها
+int selectedItem = 0;
 unsigned long lastPress = 0;
 
-// توابع کمکی
+
 bool buttonPressed(int pin) {
   if (digitalRead(pin) == LOW && millis() - lastPress > 200) {
     lastPress = millis();
@@ -110,7 +113,7 @@ void setup() {
 }
 
 void loop() {
-  // کنترل منو اصلی
+
   if (currentMenu == MENU_MAIN) {
     if (buttonPressed(BTN_UP)) {
       selectedItem = (selectedItem - 1 + 2) % 2;
@@ -128,7 +131,7 @@ void loop() {
     }
   }
 
-  // تنظیمات
+ 
   else if (currentMenu == MENU_SETTINGS) {
     if (buttonPressed(BTN_UP)) {
       selectedItem = (selectedItem - 1 + 2) % 2;
@@ -150,7 +153,7 @@ void loop() {
     }
   }
 
-  // سایر منوها
+ 
   else if (currentMenu == MENU_START || currentMenu == MENU_EDIT_TURNS || currentMenu == MENU_EDIT_RPM) {
     if (buttonPressed(BTN_BACK) || buttonPressed(BTN_OK)) {
       currentMenu = MENU_MAIN;
