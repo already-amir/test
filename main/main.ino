@@ -65,6 +65,17 @@ void load_setings(){
 
 
 
+
+bool buttonPressed(int pin) {
+  if (digitalRead(pin) == LOW && millis() - lastPress > 200) {
+    lastPress = millis();
+    return true;
+  }
+  return false;
+}
+
+
+
 void setup() {
  
 
