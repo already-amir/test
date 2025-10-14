@@ -7,8 +7,8 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 // دکمه‌ها
 #define BTN_UP     12
 #define BTN_DOWN   13
-#define BTN_OK     14
-#define BTN_BACK   27
+#define BTN_OK     27
+#define BTN_BACK   14
 
 // ساختار منوها
 enum MenuState {
