@@ -1,5 +1,5 @@
 import QtQuick
-
+import "."
 Window {
 
     Item{
@@ -28,74 +28,28 @@ Window {
 
 
 
-        Rectangle{
-            height: parent.height/variable.m
-            width: parent.width
-            color: "#000000"
-
-
-            Image {
-                id: gpt_im
-
-                height: parent.height*0.8
-                width: height
-                anchors.centerIn: parent
-                source: "file:img/openai.png"
-            }
-            Text {
-                text: qsTr("chat GPT")
-                color:"white"
-                anchors.top: gpt_im.bottom
-                anchors.horizontalCenter:  parent.horizontalCenter
-            }
-
-
-
-
-
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {
-                    Qt.openUrlExternally("https://chatgpt.com/")
-                }
-            }
-
-
+        App{
+            app_img: "qrc:/res/img/openai.png"
+            app_txt: "CHAT GPT"
+            app_url: "https://chatgpt.com/"
         }
 
-        Rectangle{
-
-            height: parent.height/variable.m
-            width: parent.width
-            color:"blue"
-            Text {
-                text: qsTr("CALENDER")
-                anchors.centerIn: parent
-            }
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {
-                    Qt.openUrlExternally("https://calendar.google.com/calendar/u/0/r?pli=1")
-                }
-            }
+        App{
+            app_img: "qrc:/res/img/openai.png"
+            app_txt: "CALENDER"
+            app_url: "https://calendar.google.com/calendar/u/0/r?pli=1"
         }
 
-        Rectangle{
-
-            height: parent.height/variable.m
-            width: parent.width
-            color:"yellow"
-            Text {
-                text: qsTr("TICK TICK")
-                anchors.centerIn: parent
-            }
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {
-                    Qt.openUrlExternally("https://ticktick.com/?language=en_US")
-                }
-            }
+        App{
+            app_img: "qrc:/res/img/TickTick.png"
+            app_txt: "TICK TICK"
+            app_url: "https://ticktick.com/?language=en_US/"
         }
+
+
+
+
+
 
     }
 

@@ -16,7 +16,15 @@ qt_add_qml_module(apptest_1
     URI test_1
     QML_FILES
         Main.qml
-        RESOURCES
+        QML_FILES App.qml
+        RESOURCES Resource.qrc
+
+
+
+)
+
+qt_add_resources(apptest_1 "icons" PREFIX "/res"
+    FILES img/openai.png img/TickTick.png
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
