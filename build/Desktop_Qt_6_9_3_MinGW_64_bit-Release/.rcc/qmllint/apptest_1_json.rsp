@@ -1,0 +1,12 @@
+--bare
+-I
+C:/Users/a.sadeghi/Desktop/QML PROJECT/test_1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Release
+-I
+C:/Qt/6.9.3/mingw_64/qml
+--resource
+C:/Users/a.sadeghi/Desktop/QML PROJECT/test_1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Release/.qt/rcc/qmake_test_1.qrc
+--resource
+C:/Users/a.sadeghi/Desktop/QML PROJECT/test_1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Release/.qt/rcc/apptest_1_raw_qml_0.qrc
+C:/Users/a.sadeghi/Desktop/QML PROJECT/test_1/Main.qml
+--json
+C:/Users/a.sadeghi/Desktop/QML PROJECT/test_1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Release/apptest_1_qmllint.json

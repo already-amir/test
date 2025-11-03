@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/openai.png</file>
+    </qresource>
+</RCC>
