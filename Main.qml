@@ -37,7 +37,7 @@ Window {
         App{
             app_img: "qrc:/res/img/openai.png"
             app_txt: "CALENDER"
-            app_url: "https://calendar.google.com/calendar/u/0/r?pli=1"
+            app_url: "file:///C:/Program Files/Arduino IDE.exe"
         }
 
         App{
