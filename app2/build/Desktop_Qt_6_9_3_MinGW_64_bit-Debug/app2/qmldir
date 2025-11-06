@@ -1,0 +1,6 @@
+module app2
+typeinfo appapp2.qmltypes
+prefer :/qt/qml/app2/
+Main 254.0 Main.qml
+depends QtQuick
+
