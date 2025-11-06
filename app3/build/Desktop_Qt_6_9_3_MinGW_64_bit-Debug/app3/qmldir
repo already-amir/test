@@ -1,0 +1,9 @@
+module app3
+typeinfo appapp3.qmltypes
+prefer :/qt/qml/app3/
+Main 254.0 Main.qml
+Home_window 254.0 Home_window.qml
+Icon 254.0 Icon.qml
+Main_window 254.0 Main_window.qml
+depends QtQuick
+
