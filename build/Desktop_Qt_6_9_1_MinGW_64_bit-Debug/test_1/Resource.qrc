@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>img/openai.png</file>
+        <file>img/TickTick.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

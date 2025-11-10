@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/res">
+    <file alias="img/openai.png">C:/Users/alrea/Desktop/test/img/openai.png</file>
+    <file alias="img/TickTick.png">C:/Users/alrea/Desktop/test/img/TickTick.png</file>
+  </qresource>
+</RCC>
+
