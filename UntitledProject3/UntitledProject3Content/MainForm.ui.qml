@@ -1,43 +1,42 @@
 //MainForm.ui.qml
 
+
 /*
 This is a UI file (.ui.qml) that is intended to be edited in Qt Design Studio only.
 It is supposed to be strictly declarative and only uses a subset of QML. If you edit
 this file manually, you might introduce QML code that is not supported by Qt Design Studio.
 Check out https://doc.qt.io/qtcreator/creator-quick-ui-forms.html for details on .ui.qml files.
 */
-
-
 import QtQuick
 import QtQuick.Controls
 import UntitledProject3
 
 Rectangle {
     id: root
-    property int icon_size: Math.min(root.width,root.height)*0.3
+    property int icon_size: Math.min(root.width, root.height) * 0.3
 
     property alias home_icon: home
     property alias boiler_icon: boiler
     property alias setting_icon: setting
     property alias d3d_icon: d3d
+
     Image {
 
         anchors.fill: parent
         source: "images/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products.jpg"
     }
 
-    Rectangle {
-        id: rectangle
-        width: row.width*1.1
-        height: row.height*1.5
-        color: "#40ffffff"
-        radius: width * 0.05
-        border.color: "#80ffffff"
+    Glassy {
+        id: glass
+
+        g_width: row.width*1.1
+        g_heigh: row.height*2
+        g_round: row.width *0.1
+
         anchors.centerIn: parent
 
-
         Row {
-            id:row
+            id: row
             anchors.centerIn: parent
 
             spacing: icon_size / 10
@@ -45,7 +44,6 @@ Rectangle {
                 id: home
                 i_size: icon_size
                 i_img: "images/home.png"
-
             }
             Icon {
                 id: boiler

@@ -13,16 +13,9 @@ Item {
     width: size
     height: size
 
+    Glassy{
 
-    Rectangle{
         anchors.fill: parent
-
-        radius: width*0.2
-        color:"#40FFFFFF"
-        border.width: 1
-        border.color: "#80FFFFFF"
-
-
 
         Image {
             id:icon_image
@@ -30,16 +23,11 @@ Item {
             width: parent.width *0.7
             height: parent.height*0.7
             anchors.centerIn: parent
-
         }
+
         MouseArea{
             anchors.fill: parent
             onClicked: icon.clicked()
         }
-
-
-
-
-
     }
 }

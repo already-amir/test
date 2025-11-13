@@ -99,11 +99,6 @@ Rectangle {
                             id: switch1
                             text: qsTr("Switch")
                         }
-                        CustomSwitch {
-                            id: customSwitch
-                            x: 45
-                            y: 69
-                        }
 
 
                     }
