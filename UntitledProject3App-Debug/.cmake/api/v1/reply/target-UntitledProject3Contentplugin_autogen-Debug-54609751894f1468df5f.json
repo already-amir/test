@@ -1,0 +1,75 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"UntitledProject3Content/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "UntitledProject3Contentplugin_autogen_timestamp_deps::@3723bc7f3948ee17bb4a"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "UntitledProject3Contentplugin_autogen::@3723bc7f3948ee17bb4a",
+	"isGeneratorProvided" : true,
+	"name" : "UntitledProject3Contentplugin_autogen",
+	"paths" : 
+	{
+		"build" : "UntitledProject3Content",
+		"source" : "UntitledProject3Content"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/CMakeFiles/UntitledProject3Contentplugin_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/CMakeFiles/UntitledProject3Contentplugin_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/UntitledProject3Contentplugin_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/UntitledProject3Content">
+    <file alias="images/royal_esplanade_4k.hdr">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/royal_esplanade_4k.hdr</file>
+    <file alias="d3/images/royal_esplanade_4k.hdr">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/images/royal_esplanade_4k.hdr</file>
+  </qresource>
+</RCC>
+

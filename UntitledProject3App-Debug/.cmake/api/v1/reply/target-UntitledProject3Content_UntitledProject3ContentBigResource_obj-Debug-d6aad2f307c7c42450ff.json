@@ -1,0 +1,162 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "UntitledProject3Content/CMakeFiles/UntitledProject3Content_UntitledProject3ContentBigResource_obj.dir/./.qt/rcc/qrc_UntitledProject3ContentBigResource_tmp.cpp.obj"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_rcc_pass2",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"target_compile_definitions"
+		],
+		"files" : 
+		[
+			"G:/DEV/Qt/6.9.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"UntitledProject3Content/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 401,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2507,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 559,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 561,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content"
+				},
+				{
+					"path" : "C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "UntitledProject3Content_UntitledProject3ContentBigResource_obj::@3723bc7f3948ee17bb4a",
+	"name" : "UntitledProject3Content_UntitledProject3ContentBigResource_obj",
+	"paths" : 
+	{
+		"build" : "UntitledProject3Content",
+		"source" : "UntitledProject3Content"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/.qt/rcc/qrc_UntitledProject3ContentBigResource_tmp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/.qt/rcc/qrc_UntitledProject3ContentBigResource_tmp.cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

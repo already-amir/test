@@ -1,0 +1,44 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 237,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "x",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "y",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 430,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "color",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 331,
+                        "errorMessage": "Cannot access value for name hoverHandler",
+                        "functionName": "color",
+                        "line": 23
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/CustomSlider.qml"
+            }
+        ],
+        "moduleId": "UntitledProject3Content(UntitledProject3Content)"
+    }
+]

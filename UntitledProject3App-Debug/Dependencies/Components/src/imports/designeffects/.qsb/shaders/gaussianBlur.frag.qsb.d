@@ -1,0 +1,2 @@
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/Dependencies/Components/src/imports/designeffects/.qsb/shaders/gaussianBlur.frag.qsb: \
+  C:/Users/alrea/Desktop/test/UntitledProject3/Dependencies/Components/src/imports/designeffects/shaders/gaussianBlur.frag

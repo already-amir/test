@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="/qt/qml/UntitledProject3Content/">
+    <file alias="Icon.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/Icon.qml</file>
+    <file alias="Main.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/Main.qml</file>
+    <file alias="HomeForm.ui.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/HomeForm.ui.qml</file>
+    <file alias="MainForm.ui.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/MainForm.ui.qml</file>
+    <file alias="Home.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/Home.qml</file>
+    <file alias="Glassy.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/Glassy.qml</file>
+    <file alias="App.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/App.qml</file>
+    <file alias="d3/MouseRotatorAndWASD.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/MouseRotatorAndWASD.qml</file>
+    <file alias="d3/a_App.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/a_App.qml</file>
+    <file alias="d3/CustomSwitch.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/CustomSwitch.qml</file>
+    <file alias="d3/FresnelControls.ui.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/FresnelControls.ui.qml</file>
+    <file alias="d3/ArcballController.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/ArcballController.qml</file>
+    <file alias="d3/CustomSlider.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/CustomSlider.qml</file>
+    <file alias="d3/Screen01Form.ui.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/Screen01Form.ui.qml</file>
+    <file alias="d3/CustomComboBox.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/CustomComboBox.qml</file>
+    <file alias="d3/Screen01.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/Screen01.qml</file>
+    <file alias="d3/SliderText.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/SliderText.qml</file>
+    <file alias="d3/CustomButton.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/CustomButton.qml</file>
+    <file alias="d3/Sphere.qml">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/Sphere.qml</file>
+    <file alias="images/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products.jpg">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products.jpg</file>
+    <file alias="images/downArrow.svg">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/downArrow.svg</file>
+    <file alias="images/grey chair ag.jpg">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/grey chair ag.jpg</file>
+    <file alias="images/boiler.png">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/boiler.png</file>
+    <file alias="images/ross.png">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/ross.png</file>
+    <file alias="images/closeIcon.svg">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/closeIcon.svg</file>
+    <file alias="images/home.png">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/home.png</file>
+    <file alias="images/settings.png">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/settings.png</file>
+    <file alias="images/P3d.png">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/images/P3d.png</file>
+    <file alias="d3/images/closeIcon.svg">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/images/closeIcon.svg</file>
+    <file alias="d3/images/downArrow.svg">C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/images/downArrow.svg</file>
+  </qresource>
+</RCC>
+

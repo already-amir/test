@@ -1,0 +1,52 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 8,
+                        "durationMicroseconds": 548,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 7
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 8,
+                        "durationMicroseconds": 275,
+                        "errorMessage": "",
+                        "functionName": "z",
+                        "line": 8
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 360,
+                        "errorMessage": "Cannot access value for name greenMaterial",
+                        "functionName": "materials",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 13,
+                        "durationMicroseconds": 166,
+                        "errorMessage": "",
+                        "functionName": "to",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 24
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/Sphere.qml"
+            }
+        ],
+        "moduleId": "UntitledProject3Content(UntitledProject3Content)"
+    }
+]

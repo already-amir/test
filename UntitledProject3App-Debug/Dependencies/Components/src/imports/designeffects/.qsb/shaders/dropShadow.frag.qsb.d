@@ -1,0 +1,2 @@
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/Dependencies/Components/src/imports/designeffects/.qsb/shaders/dropShadow.frag.qsb: \
+  C:/Users/alrea/Desktop/test/UntitledProject3/Dependencies/Components/src/imports/designeffects/shaders/dropShadow.frag

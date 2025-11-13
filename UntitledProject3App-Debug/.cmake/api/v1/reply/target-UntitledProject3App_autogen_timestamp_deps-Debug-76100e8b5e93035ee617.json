@@ -1,0 +1,58 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "UntitledProject3App_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "UntitledProject3Contentplugin::@3723bc7f3948ee17bb4a"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioEventSimulatorplugin::@9e8e581b12af718262a4"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioEventSystemplugin::@7abcc90e1fb5c1ae319b"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioApplicationplugin::@f9460591756501d20fea"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioUtilsplugin::@cff03bf3820f915d6cea"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "UntitledProject3App_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "UntitledProject3App_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

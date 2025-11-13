@@ -1,0 +1,476 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 592,
+                        "errorMessage": "",
+                        "functionName": "sourceRotation",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 277,
+                        "errorMessage": "",
+                        "functionName": "radiusCeiled",
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 49,
+                        "durationMicroseconds": 561,
+                        "errorMessage": "",
+                        "functionName": "orginialTextureSize",
+                        "line": 48
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 116,
+                        "errorMessage": "",
+                        "functionName": "sigma",
+                        "line": 50
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 54
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 13,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 103,
+                        "errorMessage": "",
+                        "functionName": "onSourceRotationChanged",
+                        "line": 59
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 276,
+                        "errorMessage": "",
+                        "functionName": "onRadiusCeiledChanged",
+                        "line": 60
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "",
+                        "functionName": "onSpreadChanged",
+                        "line": 61
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "onHorizontalOffsetChanged",
+                        "line": 62
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "onVerticalOffsetChanged",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 148,
+                        "errorMessage": "",
+                        "functionName": "__offset",
+                        "line": 67
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 3751,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "calculateOffset",
+                        "line": 69
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 251,
+                        "errorMessage": "Instruction \"generate_CmpInstanceOf\" not implemented",
+                        "functionName": "copyActive",
+                        "line": 80
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 541,
+                        "errorMessage": "",
+                        "functionName": "bluredTextureSize",
+                        "line": 117
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 49,
+                        "durationMicroseconds": 523,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method vector2d, returning QVariant -> QVector2D stored as QVariant",
+                        "functionName": "bluredPixelSize",
+                        "line": 120
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 723,
+                        "errorMessage": "",
+                        "functionName": "offsetTextureSize",
+                        "line": 171
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 41,
+                        "durationMicroseconds": 439,
+                        "errorMessage": "",
+                        "functionName": "boundingBox",
+                        "line": 201
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "",
+                        "functionName": "onBoundingBoxChanged",
+                        "line": 203
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 281,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 85
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 334,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 86
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 219,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/alrea/Desktop/test/UntitledProject3/Dependencies/Components/src/imports/designeffects/DesignDropShadowPrivate.qml)::source with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 94
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 95
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 174,
+                        "errorMessage": "",
+                        "functionName": "sourceItem",
+                        "line": 96
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 102
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 345,
+                        "errorMessage": "",
+                        "functionName": "src",
+                        "line": 103
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 123,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 107
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 108
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 486,
+                        "errorMessage": "",
+                        "functionName": "sourceRect",
+                        "line": 111
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 71,
+                        "errorMessage": "",
+                        "functionName": "blurKernel",
+                        "line": 126
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "sigma",
+                        "line": 127
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "src",
+                        "line": 128
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "Multiple matching overrides found. Cannot determine the right one.",
+                        "functionName": "pixelSize",
+                        "line": 129
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 135
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "",
+                        "functionName": "blurKernel",
+                        "line": 147
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "sigma",
+                        "line": 148
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 407,
+                        "errorMessage": "",
+                        "functionName": "src",
+                        "line": 149
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "Multiple matching overrides found. Cannot determine the right one.",
+                        "functionName": "pixelSize",
+                        "line": 150
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 18,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 154
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 364,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 156
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 189,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 157
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 159
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 162
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 753,
+                        "errorMessage": "",
+                        "functionName": "sourceRect",
+                        "line": 163
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 176,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 177
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 171,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 178
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "sourceItem",
+                        "line": 179
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 699,
+                        "errorMessage": "",
+                        "functionName": "sourceRect",
+                        "line": 180
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "",
+                        "functionName": "shadow",
+                        "line": 188
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 168,
+                        "errorMessage": "",
+                        "functionName": "original",
+                        "line": 189
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 18,
+                        "durationMicroseconds": 105,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 191
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 301,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 193
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 3199,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 194
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 181,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 195
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 196
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/Dependencies/Components/src/imports/designeffects/DesignDropShadowPrivate.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.DesignEffects(QuickStudioDesignEffects)"
+    }
+]

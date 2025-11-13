@@ -1,0 +1,98 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_target_enable_qmllint",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module"
+		],
+		"files" : 
+		[
+			"G:/DEV/Qt/6.9.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"UntitledProject3Content/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 916,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3228,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1496,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "all_qmltyperegistrations::@3723bc7f3948ee17bb4a"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets/QmlLinter"
+	},
+	"id" : "UntitledProject3Content_qmllint::@3723bc7f3948ee17bb4a",
+	"name" : "UntitledProject3Content_qmllint",
+	"paths" : 
+	{
+		"build" : "UntitledProject3Content",
+		"source" : "UntitledProject3Content"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/CMakeFiles/UntitledProject3Content_qmllint",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/CMakeFiles/UntitledProject3Content_qmllint.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

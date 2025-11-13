@@ -1,0 +1,44 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 675,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 8
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 121,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 9
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 10
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 68,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 11
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/Main.qml"
+            }
+        ],
+        "moduleId": "UntitledProject3Content(UntitledProject3Content)"
+    }
+]

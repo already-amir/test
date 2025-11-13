@@ -1,0 +1,14 @@
+-I
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/qml
+-I
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/qml
+-I
+G:/DEV/Qt/6.9.1/mingw_64/qml
+--resource
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/.qt/rcc/qmake_UntitledProject3Content.qrc
+--resource
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/.qt/rcc/UntitledProject3Content_raw_qml_0.qrc
+--resource
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/UntitledProject3Content/.qt/rcc/UntitledProject3ContentBigResource.qrc
+--module
+UntitledProject3Content

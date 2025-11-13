@@ -1,0 +1,356 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 50,
+                        "durationMicroseconds": 1007,
+                        "errorMessage": "",
+                        "functionName": "inputsNeedProcessing",
+                        "line": 30
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "",
+                        "functionName": "implicitWidth",
+                        "line": 37
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "implicitHeight",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "focus",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "mousePressed",
+                        "line": 65
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "mouseReleased",
+                        "line": 72
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "mouseMoved",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 164,
+                        "errorMessage": "",
+                        "functionName": "forwardPressed",
+                        "line": 80
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 68,
+                        "errorMessage": "",
+                        "functionName": "forwardReleased",
+                        "line": 85
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 120,
+                        "errorMessage": "",
+                        "functionName": "backPressed",
+                        "line": 89
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "backReleased",
+                        "line": 94
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 118,
+                        "errorMessage": "",
+                        "functionName": "rightPressed",
+                        "line": 98
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "",
+                        "functionName": "rightReleased",
+                        "line": 103
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 134,
+                        "errorMessage": "",
+                        "functionName": "leftPressed",
+                        "line": 107
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 96,
+                        "errorMessage": "",
+                        "functionName": "leftReleased",
+                        "line": 112
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 103,
+                        "errorMessage": "",
+                        "functionName": "upPressed",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "upReleased",
+                        "line": 121
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "downPressed",
+                        "line": 125
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "downReleased",
+                        "line": 130
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "shiftPressed",
+                        "line": 134
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "shiftReleased",
+                        "line": 138
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "handleKeyPress",
+                        "line": 142
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "handleKeyRelease",
+                        "line": 180
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 245,
+                        "errorMessage": "",
+                        "functionName": "processInputs",
+                        "line": 240
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 18,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "Cannot access value for name mouseEnabled",
+                        "functionName": "enabled",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 237,
+                        "errorMessage": "method mouseMoved cannot be resolved.",
+                        "functionName": "onCentroidChanged",
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 373,
+                        "errorMessage": "method mousePressed cannot be resolved.",
+                        "functionName": "onActiveChanged",
+                        "line": 50
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 181,
+                        "errorMessage": "",
+                        "functionName": "onTapped",
+                        "line": 59
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onPressed",
+                        "line": 62
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 62
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 159,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onReleased",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "onReleased",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 108,
+                        "errorMessage": "",
+                        "functionName": "orientation",
+                        "line": 220
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 146,
+                        "errorMessage": "",
+                        "functionName": "acceptedDevices",
+                        "line": 222
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 18,
+                        "durationMicroseconds": 298,
+                        "errorMessage": "Cannot access value for name sceneCamera",
+                        "functionName": "onWheel",
+                        "line": 223
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 18,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 223
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 18,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 234
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "method processInputs cannot be resolved.",
+                        "functionName": "onTriggered",
+                        "line": 235
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 185,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method vector2d, returning QVariant -> QVector2D stored as QVariant",
+                        "functionName": "lastPos",
+                        "line": 257
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 215,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method vector2d, returning QVariant -> QVector2D stored as QVariant",
+                        "functionName": "currentPos",
+                        "line": 258
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "updatePosition",
+                        "line": 260
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "negate",
+                        "line": 275
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 864,
+                        "errorMessage": "Cannot access value for name controlledObject",
+                        "functionName": "processInput",
+                        "line": 279
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/MouseRotatorAndWASD.qml"
+            }
+        ],
+        "moduleId": "UntitledProject3Content(UntitledProject3Content)"
+    }
+]

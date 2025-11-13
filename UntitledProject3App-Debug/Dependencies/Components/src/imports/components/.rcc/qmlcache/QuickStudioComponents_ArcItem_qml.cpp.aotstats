@@ -1,0 +1,324 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 374,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 155
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 111,
+                        "errorMessage": "",
+                        "functionName": "capStyle",
+                        "line": 161
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 87,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 167
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 521,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "alpha",
+                        "line": 223
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 53,
+                        "durationMicroseconds": 152,
+                        "errorMessage": "",
+                        "functionName": "__preferredRendererTypeAvailable",
+                        "line": 225
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 296,
+                        "errorMessage": "",
+                        "functionName": "__curveRendererActive",
+                        "line": 226
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "",
+                        "functionName": "roundEnd",
+                        "line": 253
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 76,
+                        "errorMessage": "",
+                        "functionName": "roundBegin",
+                        "line": 260
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "clamp",
+                        "line": 262
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "toRadians",
+                        "line": 266
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "myCos",
+                        "line": 270
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "mySin",
+                        "line": 274
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "polarToCartesianX",
+                        "line": 278
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "polarToCartesianY",
+                        "line": 282
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "function without return type annotation returns call to method min, returning double. This may prevent proper compilation to Cpp.",
+                        "functionName": "sortedBegin",
+                        "line": 286
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "function without return type annotation returns call to method min, returning double. This may prevent proper compilation to Cpp.",
+                        "functionName": "sortedEnd",
+                        "line": 290
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "function without return type annotation returns bool. This may prevent proper compilation to Cpp.",
+                        "functionName": "isArcFull",
+                        "line": 294
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 541,
+                        "errorMessage": "",
+                        "functionName": "onAlphaChanged",
+                        "line": 298
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "",
+                        "functionName": "onOutlineArcChanged",
+                        "line": 304
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "onRoundChanged",
+                        "line": 305
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "onRoundBeginChanged",
+                        "line": 306
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "onRoundEndChanged",
+                        "line": 307
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 237,
+                        "errorMessage": "",
+                        "functionName": "maxArcWidth",
+                        "line": 311
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 2914,
+                        "errorMessage": "Type call to method createQmlObject, returning QObject does not have a property x for writing",
+                        "functionName": "constructArcItem",
+                        "line": 334
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 1013,
+                        "errorMessage": "Cannot generate efficient code for LoadElement with non-numeric argument",
+                        "functionName": "clearPathElements",
+                        "line": 431
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 188,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 229
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 232,
+                        "errorMessage": "",
+                        "functionName": "smooth",
+                        "line": 230
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "",
+                        "functionName": "samples",
+                        "line": 231
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 1093,
+                        "errorMessage": "",
+                        "functionName": "__xRadius",
+                        "line": 316
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 261,
+                        "errorMessage": "",
+                        "functionName": "__yRadius",
+                        "line": 317
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 297,
+                        "errorMessage": "",
+                        "functionName": "__arcWidth",
+                        "line": 319
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "",
+                        "functionName": "__xCenter",
+                        "line": 321
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "",
+                        "functionName": "__yCenter",
+                        "line": 322
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "",
+                        "functionName": "capStyle",
+                        "line": 326
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 253,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 327
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 201,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 328
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 477,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "startX",
+                        "line": 330
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 406,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "startY",
+                        "line": 331
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 552,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 438
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/Dependencies/Components/src/imports/components/ArcItem.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.Components(QuickStudioComponents)"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 149,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "x",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "y",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 515,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "color",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 60,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "x",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "y",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 20,
+                        "durationMicroseconds": 429,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "color",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 301,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "color",
+                        "line": 23
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/CustomSwitch.qml"
+            }
+        ],
+        "moduleId": "UntitledProject3Content(UntitledProject3Content)"
+    }
+]

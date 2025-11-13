@@ -1,0 +1,12 @@
+-I
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/qml
+-I
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/qml
+-I
+G:/DEV/Qt/6.9.1/mingw_64/qml
+--resource
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/Dependencies/Components/src/imports/utils/.qt/rcc/qmake_QtQuick_Studio_Utils.qrc
+--resource
+C:/Users/alrea/Desktop/test/UntitledProject3App-Debug/Dependencies/Components/src/imports/utils/.qt/rcc/QuickStudioUtils_raw_qml_0.qrc
+--module
+QtQuick.Studio.Utils

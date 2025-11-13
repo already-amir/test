@@ -1,0 +1,36 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 342,
+                        "errorMessage": "Cannot load property font from QtObject::application with type QQmlApplication.",
+                        "functionName": "font",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "Cannot load property font from QtObject::application with type QQmlApplication.",
+                        "functionName": "largeFont",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 19,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"fontPath\".",
+                        "functionName": "fontPath",
+                        "line": 25
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3/Constants.qml"
+            }
+        ],
+        "moduleId": "UntitledProject3(UntitledProject3)"
+    }
+]

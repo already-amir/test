@@ -1,0 +1,356 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 381,
+                        "errorMessage": "Cannot access value for name Constants",
+                        "functionName": "color",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 322,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 28
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 29
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "environment",
+                        "line": 31
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 879,
+                        "errorMessage": "",
+                        "functionName": "camera",
+                        "line": 32
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 722,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 30
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 226,
+                        "errorMessage": "",
+                        "functionName": "backgroundMode",
+                        "line": 36
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 86,
+                        "errorMessage": "",
+                        "functionName": "lightProbe",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "antialiasingMode",
+                        "line": 40
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "antialiasingQuality",
+                        "line": 41
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 33,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "Cannot load property skyBoxRotation from .",
+                        "functionName": "y",
+                        "line": 37
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "cannot convert from  to QObjectList",
+                        "functionName": "materials",
+                        "line": 52
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 103,
+                        "errorMessage": "",
+                        "functionName": "quality",
+                        "line": 61
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "",
+                        "functionName": "quality",
+                        "line": 80
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 346,
+                        "errorMessage": "Cannot access value for name mirrorMaterial",
+                        "functionName": "materials",
+                        "line": 98
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "",
+                        "functionName": "quality",
+                        "line": 101
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "controlledObject",
+                        "line": 112
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "acceptedButtons",
+                        "line": 118
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot load property moveModel from .",
+                        "functionName": "enabled",
+                        "line": 119
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 123
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"centroidChanged\".",
+                        "functionName": "onCentroidChanged",
+                        "line": 124
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"activeChanged\".",
+                        "functionName": "onActiveChanged",
+                        "line": 130
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 13,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "toNDC",
+                        "line": 142
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "Cannot load property moveModel from .",
+                        "functionName": "controlledObject",
+                        "line": 151
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 20,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "Cannot load property moveModel from .",
+                        "functionName": "focus",
+                        "line": 154
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 72,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 161
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "source",
+                        "line": 162
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 71,
+                        "errorMessage": "",
+                        "functionName": "source",
+                        "line": 166
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"right\".",
+                        "functionName": "right",
+                        "line": 167
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 18,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "Cannot access value for name pressed",
+                        "functionName": "bgColor",
+                        "line": 176
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"right\".",
+                        "functionName": "right",
+                        "line": 177
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"top\".",
+                        "functionName": "top",
+                        "line": 179
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 188
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot load property monkeyMetalness from .",
+                        "functionName": "metalness",
+                        "line": 203
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "Cannot load property fresnelBias from .",
+                        "functionName": "clearcoatFresnelBias",
+                        "line": 204
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot load property fresnelScale from .",
+                        "functionName": "clearcoatFresnelScale",
+                        "line": 206
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 16,
+                        "errorMessage": "Cannot load property fresnelPower from .",
+                        "functionName": "clearcoatFresnelPower",
+                        "line": 207
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 14,
+                        "errorMessage": "Cannot load property fresnelAmount from .",
+                        "functionName": "clearcoatAmount",
+                        "line": 208
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot load property sphereMetalness from .",
+                        "functionName": "metalness",
+                        "line": 216
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 15,
+                        "errorMessage": "Cannot load property fresnelBias from .",
+                        "functionName": "clearcoatFresnelBias",
+                        "line": 219
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 15,
+                        "errorMessage": "Cannot load property fresnelScale from .",
+                        "functionName": "clearcoatFresnelScale",
+                        "line": 221
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 16,
+                        "errorMessage": "Cannot load property fresnelPower from .",
+                        "functionName": "clearcoatFresnelPower",
+                        "line": 222
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 14,
+                        "errorMessage": "Cannot load property fresnelAmount from .",
+                        "functionName": "clearcoatAmount",
+                        "line": 223
+                    }
+                ],
+                "filePath": "C:/Users/alrea/Desktop/test/UntitledProject3/UntitledProject3Content/d3/Screen01Form.ui.qml"
+            }
+        ],
+        "moduleId": "UntitledProject3Content(UntitledProject3Content)"
+    }
+]

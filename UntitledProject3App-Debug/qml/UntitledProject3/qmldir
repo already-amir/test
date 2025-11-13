@@ -1,0 +1,10 @@
+module UntitledProject3
+linktarget UntitledProject3plugin
+optional plugin UntitledProject3plugin
+classname UntitledProject3Plugin
+typeinfo UntitledProject3.qmltypes
+prefer :/qt/qml/UntitledProject3/
+singleton Constants 1.0 Constants.qml
+EventListModel 1.0 EventListModel.qml
+EventListSimulator 1.0 EventListSimulator.qml
+
