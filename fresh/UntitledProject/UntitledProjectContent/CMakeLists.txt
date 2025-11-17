@@ -16,21 +16,7 @@ qt6_add_qml_module(UntitledProjectContent
         "Icon.qml"
         "Main.qml"
         "MainForm.ui.qml"
-        "d3/a_App.qml"
-        "d3/ArcballController.qml"
-        "d3/CustomButton.qml"
-        "d3/CustomComboBox.qml"
-        "d3/CustomSlider.qml"
-        "d3/CustomSwitch.qml"
-        "d3/FresnelControls.ui.qml"
-        "d3/MouseRotatorAndWASD.qml"
-        "d3/Screen01.qml"
-        "d3/Screen01Form.ui.qml"
-        "d3/SliderText.qml"
-        "d3/Sphere.qml"
     RESOURCES
-        "d3/images/closeIcon.svg"
-        "d3/images/downArrow.svg"
         "images/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products.jpg"
         "images/boiler.png"
         "images/closeIcon.svg"
@@ -48,7 +34,6 @@ qt6_add_resources(UntitledProjectContent UntitledProjectContentBigResource
     PREFIX "/qt/qml/UntitledProjectContent"
     VERSION 1.0
     FILES 
-        "d3/images/royal_esplanade_4k.hdr"
         "images/royal_esplanade_4k.hdr"
 )
 
