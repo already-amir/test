@@ -1,0 +1,27 @@
+<RCC>
+    <qresource>
+        <file>qtquickcontrols2.conf</file>
+        <file>UntitledProject2.qmlproject</file>
+        <file>UntitledProject2/Constants.qml</file>
+        <file>UntitledProject2/EventListModel.qml</file>
+        <file>UntitledProject2/EventListSimulator.qml</file>
+        <file>UntitledProject2/qmldir</file>
+        <file>UntitledProject2Content/App.qml</file>
+        <file>UntitledProject2Content/Glassy.qml</file>
+        <file>UntitledProject2Content/Home.qml</file>
+        <file>UntitledProject2Content/HomeForm.ui.qml</file>
+        <file>UntitledProject2Content/Icon.qml</file>
+        <file>UntitledProject2Content/images/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products.jpg</file>
+        <file>UntitledProject2Content/images/boiler.png</file>
+        <file>UntitledProject2Content/images/closeIcon.svg</file>
+        <file>UntitledProject2Content/images/downArrow.svg</file>
+        <file>UntitledProject2Content/images/grey chair ag.jpg</file>
+        <file>UntitledProject2Content/images/home.png</file>
+        <file>UntitledProject2Content/images/P3d.png</file>
+        <file>UntitledProject2Content/images/ross.png</file>
+        <file>UntitledProject2Content/images/royal_esplanade_4k.hdr</file>
+        <file>UntitledProject2Content/images/settings.png</file>
+        <file>UntitledProject2Content/Main.qml</file>
+        <file>UntitledProject2Content/MainForm.ui.qml</file>
+    </qresource>
+</RCC>

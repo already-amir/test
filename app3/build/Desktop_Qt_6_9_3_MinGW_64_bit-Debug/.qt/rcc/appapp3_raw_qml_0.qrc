@@ -1,9 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/app3/">
-    <file alias="Main.qml">C:/Users/a.sadeghi/Desktop/test/app3/Main.qml</file>
-    <file alias="Home_window.qml">C:/Users/a.sadeghi/Desktop/test/app3/Home_window.qml</file>
-    <file alias="Icon.qml">C:/Users/a.sadeghi/Desktop/test/app3/Icon.qml</file>
-    <file alias="Main_window.qml">C:/Users/a.sadeghi/Desktop/test/app3/Main_window.qml</file>
-  </qresource>
-</RCC>
-
