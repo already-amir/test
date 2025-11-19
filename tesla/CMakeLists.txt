@@ -36,6 +36,7 @@ else()
     else()
         find_package(Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt5 REQUIRED COMPONENTS Core)
+find_package(Qt5 REQUIRED COMPONENTS Core)
 
         add_executable(tesla
           ${PROJECT_SOURCES}
@@ -45,6 +46,7 @@ endif()
 
 target_link_libraries(tesla
   PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick)
+target_link_libraries(tesla PRIVATE Qt5::Core)
 target_link_libraries(tesla PRIVATE Qt5::Core)
 target_link_libraries(tesla PRIVATE Qt5::Core)
 

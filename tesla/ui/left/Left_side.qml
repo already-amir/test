@@ -11,6 +11,7 @@ Rectangle{
     }
     color:"orange"
 
+    /*
     Map {
         id: map
         anchors.fill: parent
@@ -22,4 +23,5 @@ Rectangle{
 
     }
 
+    */
 }
