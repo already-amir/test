@@ -3,9 +3,7 @@ import QtQuick.Window 2.15
 
 Window {
     id:appWindow
-    width: 800
-    height: 480
-
+    visibility: Window.FullScreen
     visible: true
     title: "Parlar"
 

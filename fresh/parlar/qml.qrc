@@ -15,5 +15,7 @@
         <file>Boiler.qml</file>
         <file>Setting.qml</file>
         <file>P3d.qml</file>
+        <file>control/wifi_mng.h</file>
+        <file>control/wifi_mng.cpp</file>
     </qresource>
 </RCC>

@@ -1,46 +1,50 @@
 import QtQuick 2.15
-
+import QtQuick.Controls 2.15
 Item {
 
-    Rectangle {
-        id: root
+    Column {
+        anchors.centerIn: parent
+        spacing: 20
 
-        anchors.fill: parent
-
-        Image {
-
-            anchors.fill: parent
-            source: "img/ab.jpg"
-        }
 
         Icon{
-            id:exit
-            i_size: 40
-            anchors.right: parent.right
-            anchors.top:parent.top
-            anchors.rightMargin: 8
-            anchors.topMargin: 8
-            i_img: "img/ross.png"
-            onClicked: pageLoader.source = "Page_start.qml"
 
+            i_size: 100
+            i_text:"enable"
+            i_img: "img/ross.png"
+            onClicked: wifiManager.enableWifi(true)
+        }
+        Icon{
+
+            i_size: 100
+            i_text:"disable"
+            i_img: "img/ross.png"
+            onClicked: wifiManager.enableWifi(false)
+        }
+        Icon{
+
+            i_size: 100
+            i_text:"Scan Networks"
+            i_img: "img/ross.png"
+            onClicked: wifiManager.scanNetworks()
         }
 
 
-        Glassy {
-            id: glass
-
-            g_width: 300
-            g_heigh: 300
-            g_round: 20
-            anchors.centerIn: parent
 
 
 
-            Text{
-                text: "setting"
-                anchors.centerIn: parent
-                font.bold: true
-                font.pixelSize: 20
+        ListView {
+            id: listView
+            width: parent.width * 0.8
+            height: 200
+            model: []
+            delegate: Text { text: modelData }
+
+            Connections {
+                target: wifiManager
+                onNetworksFound: {
+                    listView.model = networks
+                }
             }
         }
     }

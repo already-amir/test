@@ -13,6 +13,17 @@ Rectangle {
         source: "img/ab.jpg"
     }
 
+    Icon{
+        id:exit
+        i_size: 100
+        anchors.right: parent.right
+        anchors.top:parent.top
+        anchors.rightMargin: 8
+        anchors.topMargin: 8
+        i_img: "img/ross.png"
+        onClicked: Qt.quit()
+    }
+
     Glassy {
         id: glass
 
