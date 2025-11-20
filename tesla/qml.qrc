@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>test.qml</file>
+        <file>ui/bottom/Bottem_bar.qml</file>
+        <file>ui/left/Left_side.qml</file>
+        <file>ui/right/Right_side.qml</file>
+        <file>control/fg.txt</file>
+        <file>control/sys.h</file>
+        <file>control/sys.cpp</file>
+    </qresource>
+</RCC>
