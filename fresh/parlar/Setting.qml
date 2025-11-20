@@ -12,21 +12,21 @@ Item {
             i_size: 100
             i_text:"enable"
             i_img: "img/ross.png"
-            onClicked: wifiManager.enableWifi(true)
+            onClicked: wifimanage.enableWifi(true)
         }
         Icon{
 
             i_size: 100
             i_text:"disable"
             i_img: "img/ross.png"
-            onClicked: wifiManager.enableWifi(false)
+            onClicked: wifimanage.enableWifi(false)
         }
         Icon{
 
             i_size: 100
             i_text:"Scan Networks"
             i_img: "img/ross.png"
-            onClicked: wifiManager.scanNetworks()
+            onClicked: wifimanage.scanNetworks()
         }
 
 

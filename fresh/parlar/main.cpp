@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     Wifi_mng wifimanage;
     QQmlApplicationEngine engine;
+    engine.rootContext()->setContextProperty("wifimanage", &wifimanage);
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(
         &engine,

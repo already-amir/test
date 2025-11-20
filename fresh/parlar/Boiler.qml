@@ -28,18 +28,57 @@ Item {
         Glassy {
             id: glass
 
-            g_width: 300
-            g_heigh: 300
-            g_round: 20
+            g_width: row.width*1.1
+            g_heigh: row.height*2
+            g_round: row.width *0.1
+
             anchors.centerIn: parent
 
-
-
-            Text{
-                text: "boiler"
+            Row {
+                id: row
                 anchors.centerIn: parent
-                font.bold: true
-                font.pixelSize: 20
+
+                spacing: icon_size / 10
+                Icon{
+
+                    i_size: 100
+                    i_text:"enable"
+                    i_img: "img/ross.png"
+                    onClicked: wifimanage.enableWifi(true)
+                }
+                Icon{
+
+                    i_size: 100
+                    i_text:"disable"
+                    i_img: "img/ross.png"
+                    onClicked: wifimanage.enableWifi(false)
+                }
+                Icon{
+
+                    i_size: 100
+                    i_text:"Scan Networks"
+                    i_img: "img/ross.png"
+                    onClicked: wifimanage.scanNetworks()
+                }
+
+
+
+
+
+                ListView {
+                    id: listView
+                    width: parent.width * 0.8
+                    height: 200
+                    model: []
+                    delegate: Text { text: modelData }
+
+                    Connections {
+                        target: wifimanage
+                        onNetworksFound: {
+                            listView.model = networks
+                        }
+                    }
+                }
             }
         }
     }
