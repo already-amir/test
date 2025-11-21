@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>res/control/connmanmanager.cpp</file>
+        <file>res/control/connmanmanager.h</file>
+        <file>res/img/ab.jpg</file>
+        <file>res/img/boiler.png</file>
+        <file>res/img/grc.jpg</file>
+        <file>res/img/home.png</file>
+        <file>res/img/P3d.png</file>
+        <file>res/img/ross.png</file>
+        <file>res/img/settings.png</file>
+        <file>res/Glassy.qml</file>
+        <file>res/Icon.qml</file>
+        <file>res/Page_start.qml</file>
+        <file>res/home/Home.qml</file>
+        <file>res/3d/P3d.qml</file>
+        <file>res/boiler/Boiler.qml</file>
+        <file>res/setting/Setting.qml</file>
+    </qresource>
+</RCC>
