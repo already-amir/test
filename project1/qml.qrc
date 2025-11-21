@@ -17,5 +17,7 @@
         <file>res/3d/P3d.qml</file>
         <file>res/boiler/Boiler.qml</file>
         <file>res/setting/Setting.qml</file>
+        <file>res/home/Left_side_panel.qml</file>
+        <file>res/home/Right_side_panel.qml</file>
     </qresource>
 </RCC>
