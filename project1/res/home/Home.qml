@@ -15,7 +15,7 @@ Item {
     Icon{
         id:exit
 
-        i_size: 60
+        i_size: Math.min(parent.width,parent.height)/8
         anchors.right: parent.right
         anchors.top:parent.top
         anchors.rightMargin: 8
@@ -26,17 +26,15 @@ Item {
 
     Glassy{
         id:main
-        g_width: parent.width *0.90
-        g_heigh: parent.height *0.80
-        g_round: g_width * 0.05
+        g_width: parent.width*0.9
+        g_heigh: parent.height *0.8
         anchors.centerIn: parent
 
-        Row{
-            id: row
 
+        Row{
             anchors.centerIn: parent
 
-            spacing: main.width *0.01
+            spacing: 1
 
             Left_side_panel{
 

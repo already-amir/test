@@ -6,7 +6,7 @@ Glassy{
 
 
   g_width: main.width * 0.15
-  g_heigh: main.height *0.9
-  g_round: main.width * 0.01
+  g_heigh: main.height *0.95
+
 
 }

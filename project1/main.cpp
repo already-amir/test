@@ -1,5 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include<QQmlContext>
+#include "res/control/event_handeler.h"
 
 int main(int argc, char *argv[])
 {
@@ -7,8 +9,10 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
     QGuiApplication app(argc, argv);
-
+    Event_handeler handler;
     QQmlApplicationEngine engine;
+    engine.rootContext()->setContextProperty("handler",&handler);
+
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(
         &engine,

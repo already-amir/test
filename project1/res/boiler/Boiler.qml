@@ -17,7 +17,7 @@ Item {
 
         Icon{
             id:exit
-            i_size: 40
+            i_size: Math.min(parent.width,parent.height)/8
             anchors.right: parent.right
             anchors.top:parent.top
             anchors.rightMargin: 8
