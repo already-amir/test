@@ -1,0 +1,9 @@
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/project1.dir
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/list_install_components.dir
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/install.dir
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/install/local.dir
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/install/strip.dir
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/project1_autogen_timestamp_deps.dir
+/home/amir/Desktop/test/project1/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/project1_autogen.dir
