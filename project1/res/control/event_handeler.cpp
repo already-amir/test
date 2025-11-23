@@ -38,19 +38,21 @@ QString Event_handeler::run_command(QString cmd, QStringList args)
 //............
 void Event_handeler::enable_wifi()
 {
-    QString result = run_command("netsh", {"interface", "set", "interface", "name=\"Wi-Fi\"", "admin=enabled"});
+    QString result = run_command("/usr/bin/connmanctl", {"enable", "wifi"});
     qDebug() << result;
+
 }
 
 void Event_handeler::disable_wifi()
 {
-    QString result = run_command("netsh", {"interface", "set", "interface", "name=\"Wi-Fi\"", "admin=disabled"});
+    QString result = run_command("/usr/bin/connmanctl", {"disable", "wifi"});
     qDebug() << result;
 }
 
 void Event_handeler::scan_wifi()
 {
-    QString result = run_command("netsh", {"wlan", "show", "networks"});
+    run_command("/usr/bin/connmanctl", {"scan", "wifi"});
+    QString result = run_command("/usr/bin/connmanctl", {"services"});
     qDebug() << result;
 }
 //..............................
