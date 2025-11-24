@@ -11,13 +11,10 @@ Event_handeler::Event_handeler(QObject *parent)
 QString Event_handeler::run_command(QString cmd, QStringList args)
 {
     QProcess process;
-    process.setProcessChannelMode(QProcess::MergedChannels);
+
     process.start(cmd, args);
 
-    if(!process.waitForStarted(5000)){
-        qDebug() << "Failed to start:" << cmd;
-        return "";
-    }
+
 
 
     if(!process.waitForFinished(-1)){

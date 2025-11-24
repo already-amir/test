@@ -1,98 +1,61 @@
-
 import QtQuick 2.15
-import "../"
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
+
 Item {
+    width: 400
+    height: 600
+    visible: true
 
-    Rectangle {
-        id: root
-
-
+    ColumnLayout {
         anchors.fill: parent
+        spacing: 10
+        //padding: 10
 
-        Image {
+        ListView {
+            id: wifiListView
+            Layout.fillWidth: true
+            Layout.preferredHeight: 300
+            model: wifi.wifi_list
 
-            anchors.fill: parent
-            source: "../img/ab.jpg"
-        }
+            delegate: Rectangle {
+                width: parent.width
+                height: 40
+                border.width: 1
+                radius: 4
+                color: index % 2 === 0 ? "#f0f0f0" : "#ffffff"
 
-        Icon{
-            id:exit
-            i_size: Math.min(parent.width,parent.height)/8
-            anchors.right: parent.right
-            anchors.top:parent.top
-            anchors.rightMargin: 8
-            anchors.topMargin: 8
-            i_img: "../img/ross.png"
-            onClicked: pageLoader.source = "../Page_start.qml"
-        }
-
-        Glassy {
-            id: glass
-
-            g_width: row.width*1.1
-            g_heigh: row.height*2
-            g_round: row.width *0.1
-
-            anchors.centerIn: parent
-
-            Row {
-                id: row
-                anchors.centerIn: parent
-
-                spacing: 100 / 10
-                Icon{
-
-                    i_size: 100
-                    i_text:"enable"
-                    i_img: "../img/ross.png"
-                    onClicked:{
-                        handler.enable_wifi()
-
-
-                    }
+                Text {
+                    anchors.centerIn: parent
+                    text: model.display  // یا modelData هم کار می‌کنه
+                    font.pixelSize: 16
+                    elide: Text.ElideRight
                 }
-                Icon{
-
-                    i_size: 100
-                    i_text:"disable"
-                    i_img: "../img/ross.png"
-                    onClicked: handler.disable_wifi()
-
-                }
-                Icon{
-
-                    i_size: 100
-                    i_text:"Scan Networks"
-                    i_img: "../img/ross.png"
-                    onClicked: handler.scan_wifi()
-
-                }
-
-                ListView {
-                    width: 600
-                    height: 250
-                    model: handler.m_NNetworksModel
-
-                    delegate: Rectangle {
-                        width: parent.width
-                        height: 40
-                        border.width: 1
-
-                        Text {
-                            text: modelData
-                            anchors.centerIn: parent
-                        }
-                    }
-                }
-
-
-
-
-
-
             }
+        }
+
+        Button {
+            text: "Scan WiFi"
+            Layout.alignment: Qt.AlignHCenter
+            onClicked: wifi.scan_wifi()
+        }
+
+        Text {
+            id: statusText
+            Layout.alignment: Qt.AlignHCenter
+            color: "red"
+            font.pixelSize: 14
         }
     }
 
-
+    // نمایش خطاهای process
+    Connections {
+        target: handler
+        onCommandError: {
+            statusText.text = "Error: " + error
+        }
+        onCommandOutput: {
+            statusText.text = "Scan complete. Found " + wifi.wifi_list.count + " networks"
+        }
+    }
 }

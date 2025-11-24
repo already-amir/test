@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 #include<QQmlContext>
 #include "res/control/event_handeler.h"
+#include "res/control/wifi.h"
 
 int main(int argc, char *argv[])
 {
@@ -10,8 +11,10 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
     Event_handeler handler;
+    Wifi wifi_handel;
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextProperty("handler",&handler);
+    engine.rootContext()->setContextProperty("wifi",&wifi_handel);
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(
