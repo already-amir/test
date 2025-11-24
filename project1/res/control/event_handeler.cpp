@@ -3,98 +3,92 @@
 Event_handeler::Event_handeler(QObject *parent)
     : QObject{parent}
 {
-    connect(&process,&QProcess::started,this,&Event_handeler::onStarted);
-    connect(&process,&QProcess::readyReadStandardOutput,this,&Event_handeler::onReadyReadStdOut);
-    connect(&process,&QProcess::readyReadStandardError,this,&Event_handeler::onReadyReadStdErr);
-    connect(&process,&QProcess::errorOccurred,this,&Event_handeler::onError);
-    connect(&process,
-            QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
-            this,
-            &Event_handeler::onFinished);
+    m_NNetworksModel = new QStringListModel(this);
+
 
 }
 //....................
 QString Event_handeler::run_command(QString cmd, QStringList args)
 {
-    process.start(cmd,args);
-    if(!process.waitForStarted(2000)){
-        qDebug()<<"failed to start: "<<cmd;
+    QProcess process;
+    process.setProcessChannelMode(QProcess::MergedChannels);
+    process.start(cmd, args);
+
+    if(!process.waitForStarted(5000)){
+        qDebug() << "Failed to start:" << cmd;
         return "";
     }
 
-    if(process.waitForFinished(5000)){
-        qDebug()<<"prosess timeout: "<<cmd;
+
+    if(!process.waitForFinished(-1)){
+        qDebug() << "Process timeout:" << cmd;
         process.kill();
         return "";
     }
 
-    QString output = process.readAllStandardOutput();
-    QString error = process.readAllStandardError();
-    if(!error.isEmpty())
-        qDebug() << "Error:" << error<<Qt::endl;
+    QByteArray output = process.readAll();
+    QString result = QString::fromUtf8(output);
 
-    return output;
+    return result;
 }
 //............
 void Event_handeler::enable_wifi()
 {
-    QString result = run_command("/usr/bin/connmanctl", {"enable", "wifi"});
+    QString result = run_command("nmcli", {"radio", "wifi", "on"});
+    //QString result = run_command("/usr/bin/connmanctl", {"enable", "wifi"});
     qDebug() << result;
 
 }
 
 void Event_handeler::disable_wifi()
 {
-    QString result = run_command("/usr/bin/connmanctl", {"disable", "wifi"});
+    QString result = run_command("nmcli", {"radio", "wifi", "off"});
+    //QString result = run_command("/usr/bin/connmanctl", {"disable", "wifi"});
     qDebug() << result;
 }
 
 void Event_handeler::scan_wifi()
 {
-    run_command("/usr/bin/connmanctl", {"scan", "wifi"});
-    QString result = run_command("/usr/bin/connmanctl", {"services"});
-    qDebug() << result;
+    QString output = run_command("nmcli", {"-f", "SSID", "device", "wifi", "list"});
+    QStringList lines = output.split("\n", Qt::SkipEmptyParts);
+    if (lines.isEmpty()) {
+        qWarning() << "WiFi scan returned empty output:" << output;
+        return;
+    }
+    lines.removeFirst();
+    qDebug() << "MODEL PTR =" << m_NNetworksModel;
+    m_NNetworksModel->setStringList(lines);
+    emit NNetworksModelChanged();
+    //run_command("nmcli", {"device", "wifi", "rescan"});
+    //QString result = run_command("nmcli", {"device", "wifi", "list"});
+
+    //run_command("/usr/bin/connmanctl", {"scan", "wifi"});
+    //QString result = run_command("/usr/bin/connmanctl", {"services"});
+    qDebug() << lines;
 }
-//..............................
-void Event_handeler::onStarted()
+
+void Event_handeler::connect_wifi(const QString &ssid, const QString &password)
 {
-    qDebug() << "Process started.";
+    QStringList args = {"device", "wifi", "connect", ssid};
+    if (!password.isEmpty())
+        args << "password" << password;
 
+    QString result = run_command("nmcli", args);
+    qDebug() << "Connect to" << ssid << "result:" << result;
 }
 
-void Event_handeler::onReadyReadStdOut()
-{
-    QByteArray out = process.readAllStandardOutput();
-    qDebug() << "STDOUT:" << out;
-
-}
-
-void Event_handeler::onReadyReadStdErr()
-{
-    QByteArray err = process.readAllStandardError();
-    qDebug() << "STDERR:" << err;
-}
-
-void Event_handeler::onFinished(int exitCode, QProcess::ExitStatus status)
-{
-    qDebug() << "Process finished. Exit code:" << exitCode << "Status:" << status;
-}
-
-void Event_handeler::onError(QProcess::ProcessError error)
-{
-    qDebug() << "Process error:" << error;
-}
 
 //.........................
-QStringList Event_handeler::Cmd_out() const
+QStringListModel *Event_handeler::NNetworksModel() const
 {
-    return m_Cmd_out;
+    return m_NNetworksModel;
 }
 
-void Event_handeler::setCmd_out(const QStringList &newCmd_out)
+
+void Event_handeler::setNNetworksModel(QStringListModel *newNNetworksModel)
 {
-    if (m_Cmd_out == newCmd_out)
+    if (m_NNetworksModel == newNNetworksModel)
         return;
-    m_Cmd_out = newCmd_out;
-    emit Cmd_outChanged();
+    m_NNetworksModel = newNNetworksModel;
+    emit NNetworksModelChanged();
 }

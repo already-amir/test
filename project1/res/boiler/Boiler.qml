@@ -46,7 +46,7 @@ Item {
                     i_text:"enable"
                     i_img: "../img/ross.png"
                     onClicked:{
-                        wifimanage.enableWifi()
+                        handler.enable_wifi()
 
 
                     }
@@ -56,7 +56,7 @@ Item {
                     i_size: 100
                     i_text:"disable"
                     i_img: "../img/ross.png"
-                    onClicked: wifimanage.disableWifi()
+                    onClicked: handler.disable_wifi()
 
                 }
                 Icon{
@@ -64,14 +64,14 @@ Item {
                     i_size: 100
                     i_text:"Scan Networks"
                     i_img: "../img/ross.png"
-                    onClicked: wifimanage.scanWifi()
+                    onClicked: handler.scan_wifi()
 
                 }
 
                 ListView {
                     width: 600
                     height: 250
-                    model: wifimanage.wifiList
+                    model: handler.m_NNetworksModel
 
                     delegate: Rectangle {
                         width: parent.width
