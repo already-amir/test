@@ -1,3 +1,4 @@
+//wifi.cpp
 #include "wifi.h"
 
 Wifi::Wifi(QObject *parent)
@@ -49,6 +50,7 @@ void Wifi::disable_wifi()
 void Wifi::scan_wifi()
 {
     if (m_wifi_process->state()==QProcess::Running){
+        qDebug() << "wifi is already scanning";
         return;
     }
     QStringList args = {"-f", "SSID", "device", "wifi", "list"};
@@ -74,7 +76,7 @@ void Wifi::onReadyReadStdOut()
     QStringList lines = output.split("\n", Qt::SkipEmptyParts);
     if (!lines.isEmpty() && lines.first().contains("SSID")) lines.removeFirst();
 
-    m_wifi_list->setStringList(lines); // آپدیت مدل QML
+    m_wifi_list->setStringList(lines);
     emit command_out(output);
 }
 
@@ -97,4 +99,5 @@ void Wifi::onProcessFinished(int exitCode, QProcess::ExitStatus status)
 void Wifi::onProcessError(QProcess::ProcessError error)
 {
     qDebug() << "wifi Process error:" << error;
+    emit command_err("wifi Process error: " + QString::number(error));
 }

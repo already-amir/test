@@ -9,12 +9,19 @@ Window {
     visible: true
     title: "Parlar"
 
+
     Loader {
         id: pageLoader
         anchors.fill: parent
         source: "res/Page_start.qml"
 
     }
+
+
+
+
+
+
 
 }
 
