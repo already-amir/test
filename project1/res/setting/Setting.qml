@@ -1,39 +1,66 @@
 import QtQuick 2.15
+import "../"
 import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.15
-
 Item {
-    width: 400
-    height: 600
-    visible: true
+    anchors.fill:parent
+    id:main
+    Image {
+        id: image
+        anchors.fill: parent
+        source: "../img/ab.jpg"
+        fillMode: Image.PreserveAspectCrop
+    }
 
 
 
+    Row{
+        anchors.centerIn: parent
+        spacing: 20
 
+        Glassy{
+            g_width: main.width * 0.2
+            g_heigh: main.height *0.9
 
-    ListView {
-        width: 600
-        height: 250
-        model: handler.NNetworksModel
-
-        delegate: Rectangle {
-            width: ListView.view.width
-            height: 40
-            border.width: 1
-
-            Text {
-               text: model.display
-                anchors.centerIn: parent
+            Button {
+                text: "Check Internet"
+                onClicked: wifi.pingGoogle()
             }
+
+            Connections {
+                target: wifi
+
+                function onPingResult(success, output) {
+                    if (success)
+                        console.log("✅ Connected to internet:", output)
+                    else
+                        console.log("❌ No internet:", output)
+                }
+            }
+
+
         }
 
+        Right_side{
+
+        }
+
+
     }
 
 
-    Button {
-        text: "Scan WiFi"
-        anchors.bottom: parent.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
-        onClicked: handler.scan_wifi()
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

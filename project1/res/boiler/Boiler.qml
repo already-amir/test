@@ -1,61 +1,137 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.15
-
-Item {
-    width: 400
-    height: 600
-    visible: true
-
-    ColumnLayout {
+import "../"
+Item{
+    Image {
+        id: image
         anchors.fill: parent
-        spacing: 10
-        //padding: 10
+        source: "../img/grc.jpg"
+        fillMode: Image.PreserveAspectCrop
+    }
+    Glassy {
+        id: glass
+        g_width: 500
+        g_heigh: 500
 
-        ListView {
-            id: wifiListView
-            Layout.fillWidth: true
-            Layout.preferredHeight: 300
-            model: wifi.wifi_list
+        property int selectedIndex: -1
 
-            delegate: Rectangle {
-                width: parent.width
-                height: 40
-                border.width: 1
-                radius: 4
-                color: index % 2 === 0 ? "#f0f0f0" : "#ffffff"
+        Column {
+            anchors.centerIn: parent
+            spacing: 10
 
-                Text {
-                    anchors.centerIn: parent
-                    text: model.display  // یا modelData هم کار می‌کنه
-                    font.pixelSize: 16
-                    elide: Text.ElideRight
+
+
+            Glassy {
+                g_heigh: glass.height * 0.8
+                g_width: glass.width * 0.9
+
+                ListView {
+                    id: wifiListView
+                    anchors.fill: parent
+                    anchors.margins: 10
+                    spacing: 8
+                    clip: true
+                    model: wifi.wifi_list
+
+                    delegate: Glassy {
+                        id: cell
+                        g_width: parent.width
+                        g_heigh: glass.selectedIndex === index ? 140 : 50
+
+
+
+                        Behavior on height {
+                            NumberAnimation { duration: 200 }
+                        }
+
+
+                        Column {
+                            anchors.fill: parent
+                            anchors.margins: 10
+                            spacing: 8
+
+                            // SSID
+                            Text {
+                                text: model.display
+                                font.pixelSize: 16
+                                font.bold: true
+                            }
+
+                            // بخش بازشونده
+                            Item {
+                                width: parent.width
+                                height: glass.selectedIndex === index ? 80 : 0
+                                clip: true
+
+                                Behavior on height {
+                                    NumberAnimation { duration: 150 }
+                                }
+
+                                Column {
+                                    anchors.fill: parent
+                                    spacing: 6
+
+                                    TextField {
+                                        id: passField
+                                        placeholderText: "Enter password..."
+                                        echoMode: TextInput.Password
+                                        onTextChanged: {
+                                            if (glass.selectedIndex === index)
+                                                wifi.password = text
+                                        }
+                                    }
+
+                                    Button {
+                                        text: "Connect"
+                                        height: 32
+                                        onClicked: {
+                                            wifi.ssid = model.display
+                                            wifi.connect_wifi()
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                if (glass.selectedIndex === index)
+                                    glass.selectedIndex = -1
+                                else {
+                                    glass.selectedIndex = index
+                                    wifi.ssid = model.display
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            Text {
+                id: statusText
+                text: ""
+                color: "white"
+                font.pixelSize: 14
+            }
+
+            Connections {
+                target: wifi
+
+                function onConnected() {
+                    statusText.text = "✅ Connected to " + wifi.ssid
+                }
+
+                function onConnectionFailed(reason) {
+                    statusText.text = "❌ " + reason
+                }
+
+                function onCommand_err(err) {
+                    statusText.text = "⚠ " + err
                 }
             }
         }
-
-        Button {
-            text: "Scan WiFi"
-            Layout.alignment: Qt.AlignHCenter
-            onClicked: wifi.scan_wifi()
-        }
-
-        Text {
-            id: statusText
-            Layout.alignment: Qt.AlignHCenter
-            color: "red"
-            font.pixelSize: 14
-        }
     }
 
-    // نمایش خطاهای process
-    Connections {
-        target: handler
-        onCommandError: {
-            statusText.text = "Error: " + error
-        }
-        onCommandOutput: {
-            statusText.text = "Scan complete. Found " + wifi.wifi_list.count + " networks"
-        }
-    }
 }
+

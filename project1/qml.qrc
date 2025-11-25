@@ -20,5 +20,13 @@
         <file>res/home/Cl1.qml</file>
         <file>res/home/Cl2.qml</file>
         <file>res/home/Cl3.qml</file>
+        <file>res/setting/Right_side.qml</file>
+        <file>res/control/wifi.cpp</file>
+        <file>res/control/wifi.h</file>
+        <file>res/img/wifi_off.png</file>
+        <file>res/img/wifi_on.png</file>
+        <file>res/img/scan.png</file>
+        <file>res/setting/Top_botton.qml</file>
+        <file>res/setting/Bottom.qml</file>
     </qresource>
 </RCC>

@@ -46,7 +46,7 @@ ColumnLayout {
                     color: index % 2 === 0 ? "#2e2e2e" : "#3a3a3a"
 
                     Text {
-                        text: modelData
+                        text: model.display
                         color: "white"
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left

@@ -40,7 +40,7 @@ else()
 
         add_executable(project1
           ${PROJECT_SOURCES}
-          res/control/event_handeler.h res/control/event_handeler.cpp
+
           res/control/wifi.h res/control/wifi.cpp
 
         )
