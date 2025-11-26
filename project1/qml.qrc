@@ -26,7 +26,10 @@
         <file>res/img/wifi_off.png</file>
         <file>res/img/wifi_on.png</file>
         <file>res/img/scan.png</file>
-        <file>res/setting/Top_botton.qml</file>
-        <file>res/setting/Bottom.qml</file>
+        <file>res/setting/Wifi_Top.qml</file>
+        <file>res/setting/Wifi_Bottom.qml</file>
+        <file>res/setting/Left_side.qml</file>
+        <file>res/setting/Wifi_panel.qml</file>
+        <file>res/img/ping.png</file>
     </qresource>
 </RCC>

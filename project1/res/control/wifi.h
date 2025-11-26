@@ -11,9 +11,9 @@
 class Wifi : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QString password READ password WRITE setPassword NOTIFY passwordChanged FINAL)
+    Q_PROPERTY(QString password READ password WRITE setpassword NOTIFY passwordChanged FINAL)
     Q_PROPERTY(QString ssid READ ssid WRITE setSsid NOTIFY ssidChanged FINAL)
-    Q_PROPERTY(bool wifi_enabeled READ wifi_enabeled WRITE setWifi_enabeled NOTIFY wifi_enabeledChanged FINAL)
+    Q_PROPERTY(bool wifi_enabeled READ wifi_enabeled WRITE setwifi_enabeled NOTIFY wifi_enabeledChanged FINAL)
 
     Q_PROPERTY(QStringListModel* wifi_list READ wifi_list WRITE setwifi_list NOTIFY wifi_listChanged FINAL)
 
@@ -41,17 +41,14 @@ public:
 signals:
 
     void wifi_listChanged();
+    void wifi_enabeledChanged();
+    void passwordChanged();
+    void ssidChanged();
+
     void command_out(const QString& output);
     void command_err(const QString& error);
-
-    void wifi_enabeledChanged();
-
-    void passwordChanged();
-
-    void ssidChanged();
     void connected();
     void connectionFailed(QString reason);
-
     void pingResult(bool success, QString output);
 
 private slots:

@@ -3,11 +3,10 @@ import "../"
 import QtQuick.Controls 2.15
 
 Glassy{
-    id:right_side_main
-    g_width: setting_main.width * 0.7
+    id:left_side_main
+    g_width: setting_main.width * 0.2
     g_heigh: setting_main.height *0.9
 
-    Wifi_panel{
 
-    }
+
 }

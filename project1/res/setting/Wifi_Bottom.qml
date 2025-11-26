@@ -3,15 +3,17 @@ import QtQuick.Controls 2.15
 import "../"
 Glassy{
 
-    id:bottom_id
+    id:wifi_bottom_main
 
-    anchors.bottomMargin: 15
-    anchors.bottom: parent.bottom
+
 
     anchors.horizontalCenter: parent.horizontalCenter
+    anchors.top: parent.top
+    anchors.topMargin: parent.height * 0.2
+
     visible: wifi.wifi_enabeled
-    g_heigh: glass.height * 0.8
-    g_width: glass.width * 0.9
+    g_heigh: wifi_panel_id.height * 0.8
+    g_width: wifi_panel_id.width * 0.9
 
     ListView {
         id: wifiListView
@@ -22,12 +24,12 @@ Glassy{
         clip: true
 
         delegate: Glassy {
-            g_width: bottom_id.width
-            g_heigh: glass.selectedIndex === index ? 140 : 50
+            g_width: wifi_bottom_main.width*0.96
+            g_heigh: wifi_panel_id.selectedIndex === index ? 140 : 50
 
 
             Behavior on g_heigh {
-                NumberAnimation { duration: 200 }
+                NumberAnimation { duration: 150 }
             }
 
             Column {
@@ -36,44 +38,38 @@ Glassy{
                 spacing: 8
 
                 Item{
-                    width:bottom_id.width
+                    width:wifi_bottom_main.width
                     height: 50
 
                     Text {
                         text: model.display
                         font.pixelSize: 16
                         font.bold: true
-
-
                     }
 
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            if (glass.selectedIndex === index)
-                                glass.selectedIndex = -1
+                            if (wifi_panel_id.selectedIndex === index)
+                                wifi_panel_id.selectedIndex = -1
                             else {
-                                glass.selectedIndex = index
+                                wifi_panel_id.selectedIndex = index
                                 wifi.ssid = model.display
                             }
                         }
                     }
-
                 }
-
-
-
 
                 Item {
                     width: parent.width
-                    height: glass.selectedIndex === index ? 80 : 0
+                    height: wifi_panel_id.selectedIndex === index ? 80 : 0
                     clip: true
 
                     Behavior on height {
                         NumberAnimation { duration: 150 }
                     }
 
-                    Column {
+                    Row {
                         anchors.fill: parent
                         spacing: 6
 
@@ -82,19 +78,21 @@ Glassy{
                             placeholderText: "Enter password..."
                             echoMode: TextInput.Password
                             onTextChanged: {
-                                if (glass.selectedIndex === index)
+                                if (wifi_panel_id.selectedIndex === index)
                                     wifi.password = text
                             }
                         }
-
-                        Button {
-                            text: "Connect"
-                            height: 32
+                        Icon{
+                            i_text: "connect"
+                            i_heights:passField.height
+                            i_width: passField.height*3
                             onClicked: {
                                 wifi.ssid = model.display
                                 wifi.connect_wifi()
                             }
                         }
+
+
                     }
                 }
             }

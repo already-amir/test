@@ -4,12 +4,14 @@ Item {
 
     id:icon
     property int i_size: 50
-    property string i_img: "img/ross.png"
+    property int i_width:i_size
+    property int i_heights:i_size
+    property string i_img: ""
     property string i_text:""
     signal clicked()
 
-    width: i_size
-    height: i_size
+    width: i_width
+    height: i_heights
 
     Glassy{
         anchors.fill: parent
@@ -17,15 +19,17 @@ Item {
         Image {
             id:icon_image
             source: i_img
-            width: parent.width *0.7
+            width: parent.width*0.7
             height: parent.height*0.7
             anchors.centerIn: parent
         }
         Text{
             id:text_id
             text:i_text
-            width: parent.width
-            height: parent.height * 0.1
+            anchors.centerIn: parent
+            font.bold: true
+            font.pixelSize: parent.width/(text.length*0.7)
+
         }
         MouseArea{
             anchors.fill: parent

@@ -2,13 +2,14 @@ import QtQuick 2.15
 import "../"
 
 Glassy{
-    id:top_id
-    anchors.top: parent.top
-    anchors.topMargin: 15
-    anchors.horizontalCenter: parent.horizontalCenter
+    id:wifi_top_main
 
-    g_heigh: glass.height * 0.1
-    g_width: glass.width * 0.9
+
+    anchors.top: wifi_panel_id.top
+    anchors.horizontalCenter: parent.horizontalCenter
+    anchors.topMargin: parent.height * 0.05
+    g_heigh: wifi_panel_id.height * 0.1
+    g_width: wifi_panel_id.width * 0.9
 
     Icon{
         anchors.left: parent.left
@@ -21,45 +22,44 @@ Glassy{
             else{
                 wifi.enable_wifi()
             }
-
         }
     }
+
+    Icon{
+        anchors.horizontalCenter: parent.horizontalCenter
+        i_size: parent.height
+        onClicked: wifi.pingGoogle()
+        i_img: "img/ping.png"
+        visible: wifi.wifi_enabeled
+    }
+
     Glassy{
-        id:glassy2
+        id:wifi_top_main_glass
         anchors.right:parent.right
         g_width:row_id1.width+20
         g_heigh:parent.height
         visible: wifi.wifi_enabeled
         Row{
             id:row_id1
-            anchors.right: glassy2.right
+            anchors.right: wifi_top_main_glass.right
             spacing:20
             Text {
                 text: qsTr("scan")
                 visible: wifi.wifi_enabeled
                 font.pixelSize: 20
-
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.leftMargin: 20
             }
             Icon{
                 id:scan_id
                 i_img:"img/scan"
-                i_size: glassy2.height
+                i_size: wifi_top_main_glass.height
                 visible: wifi.wifi_enabeled
-                anchors.right: glassy2.right
-
-
             }
-
         }
         MouseArea{
             anchors.fill: parent
             onClicked: wifi.scan_wifi()
         }
     }
-
-
-
-
 }
