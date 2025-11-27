@@ -53,11 +53,11 @@ signals:
 
 private slots:
 
-    void onProcessStarted();
-    void onReadyReadStdOut();
-    void onReadyReadStdErr();
-    void onProcessFinished(int exitCode, QProcess::ExitStatus status);
-    void onProcessError(QProcess::ProcessError error);
+    void onProcessStarted(int id);
+    void onReadyReadStdOut(int id);
+    void onReadyReadStdErr(int id);
+    void onProcessFinished(int id,int exitCode, QProcess::ExitStatus status);
+    void onProcessError(int id,QProcess::ProcessError error);
 
 private:
     QStringListModel *m_wifi_list = nullptr;
@@ -66,6 +66,16 @@ private:
     bool m_waiting_for_scan;
     QString m_password;
     QString m_ssid;
+    int m_id;
+    enum WifiProcessType {
+        p_non,
+        p_wifi_enable,
+        p_wifi_disable,
+        p_wifi_scan,
+        p_wifi_connect,
+        p_wifi_ping
+    };
+
 };
 
 #endif // WIFI_H

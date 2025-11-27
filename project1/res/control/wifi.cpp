@@ -2,7 +2,7 @@
 #include "wifi.h"
 
 Wifi::Wifi(QObject *parent)
-    : QObject{parent},m_wifi_enabeled(false),m_waiting_for_scan(false),m_password(""),m_ssid("")
+    : QObject{parent},m_wifi_enabeled(false),m_waiting_for_scan(false),m_password(""),m_ssid(""),m_id(-1)
 {
     m_wifi_list = new QStringListModel(this);
     m_wifi_process = new QProcess(this);
@@ -32,9 +32,12 @@ void Wifi::enable_wifi()
     if (m_wifi_process->state()==QProcess::Running){
         m_wifi_process->kill();
     }
+
     QStringList args = {"radio", "wifi", "on"};
     m_wifi_process->setProcessChannelMode(QProcess::MergedChannels);
+    m_wifi_process->setProperty("type",p_wifi_enable);
     m_wifi_process->start("nmcli", args);
+
     setwifi_enabeled(true);
     m_waiting_for_scan=true;
     QTimer::singleShot(1000, this, &Wifi::scan_wifi);
@@ -49,7 +52,9 @@ void Wifi::disable_wifi()
     }
     QStringList args = {"radio", "wifi", "off"};
     m_wifi_process->setProcessChannelMode(QProcess::MergedChannels);
+    m_wifi_process->setProperty("type",p_wifi_disable);
     m_wifi_process->start("nmcli", args);
+
     setwifi_enabeled(false);
 }
 
@@ -112,12 +117,35 @@ void Wifi::pingGoogle()
     pingProcess->start("ping", args);
 }
 
-void Wifi::onProcessStarted()
+void Wifi::onProcessStarted(int id)
 {
     qDebug() << "wifi Process started.";
+    int type = m_wifi_process->property("type").toInt();
+    switch (type) {
+    case p_wifi_enable:
+        qDebug() << "WiFi enable process started";
+        break;
+    case p_wifi_disable:
+        qDebug() << "Scan process started";
+        break;
+    case p_wifi_scan:
+        qDebug() << "Connect process started";
+        break;
+
+    case p_wifi_connect:
+        qDebug() << "WiFi enable process started";
+        break;
+    case p_wifi_ping:
+        qDebug() << "Scan process started";
+        break;
+
+    }
+
+
+
 }
 
-void Wifi::onReadyReadStdOut()
+void Wifi::onReadyReadStdOut(int id)
 {
     QByteArray out = m_wifi_process->readAllStandardOutput();
     QString output = QString::fromUtf8(out).trimmed();
@@ -131,7 +159,7 @@ void Wifi::onReadyReadStdOut()
     emit command_out(output);
 }
 
-void Wifi::onReadyReadStdErr()
+void Wifi::onReadyReadStdErr(int id)
 {
     QByteArray err = m_wifi_process->readAllStandardError();
     QString error = QString::fromUtf8(err).trimmed();
@@ -142,7 +170,7 @@ void Wifi::onReadyReadStdErr()
 
 }
 
-void Wifi::onProcessFinished(int exitCode, QProcess::ExitStatus status)
+void Wifi::onProcessFinished(int id,int exitCode, QProcess::ExitStatus status)
 {
     qDebug() << " wifi Process finished. Exit code:" << exitCode << "Status:" << status;
     if (m_waiting_for_scan) {
@@ -156,7 +184,7 @@ void Wifi::onProcessFinished(int exitCode, QProcess::ExitStatus status)
     }
 }
 
-void Wifi::onProcessError(QProcess::ProcessError error)
+void Wifi::onProcessError(int id,QProcess::ProcessError error)
 {
     qDebug() << "wifi Process error:" << error;
     emit command_err("wifi Process error: " + QString::number(error));
