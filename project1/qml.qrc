@@ -31,5 +31,6 @@
         <file>res/setting/Left_side.qml</file>
         <file>res/setting/Wifi_panel.qml</file>
         <file>res/img/ping.png</file>
+        <file>res/img/loading.gif</file>
     </qresource>
 </RCC>

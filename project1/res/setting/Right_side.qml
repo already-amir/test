@@ -8,6 +8,6 @@ Glassy{
     g_heigh: setting_main.height *0.9
 
     Wifi_panel{
-
+        visible: (wifi_panel_id.selected_panel===2)
     }
 }

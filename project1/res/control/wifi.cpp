@@ -2,7 +2,7 @@
 #include "wifi.h"
 
 Wifi::Wifi(QObject *parent)
-    : QObject{parent},m_wifi_enabeled(false),m_waiting_for_scan(false),m_password(""),m_ssid(""),m_id(-1)
+    : QObject{parent},m_wifi_enabeled(false),m_password(""),m_ssid(""),m_busy(false)
 {
     m_wifi_list = new QStringListModel(this);
     m_wifi_process = new QProcess(this);
@@ -11,7 +11,6 @@ Wifi::Wifi(QObject *parent)
     connect(m_wifi_process, &QProcess::readyReadStandardError, this, &Wifi::onReadyReadStdErr);
     connect(m_wifi_process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &Wifi::onProcessFinished);
     connect(m_wifi_process, &QProcess::errorOccurred, this, &Wifi::onProcessError);
-
 }
 
 QStringListModel *Wifi::wifi_list() const
@@ -29,20 +28,22 @@ void Wifi::setwifi_list(QStringListModel *newWifi_list)
 
 void Wifi::enable_wifi()
 {
-    if (m_wifi_process->state()==QProcess::Running){
-        m_wifi_process->kill();
+    if (m_wifi_process->state() == QProcess::Running) {
+        int currentType = m_wifi_process->property("type").toInt();
+        if (currentType == p_wifi_connect) {
+            m_wifi_process->terminate();
+            m_wifi_process->waitForFinished(1000);
+        } else {
+            qDebug() << "Another process running, ignoring connect request";
+            return;
+        }
     }
 
     QStringList args = {"radio", "wifi", "on"};
     m_wifi_process->setProcessChannelMode(QProcess::MergedChannels);
     m_wifi_process->setProperty("type",p_wifi_enable);
+    setbusy(true);
     m_wifi_process->start("nmcli", args);
-
-    setwifi_enabeled(true);
-    m_waiting_for_scan=true;
-    QTimer::singleShot(1000, this, &Wifi::scan_wifi);
-
-
 }
 
 void Wifi::disable_wifi()
@@ -53,35 +54,44 @@ void Wifi::disable_wifi()
     QStringList args = {"radio", "wifi", "off"};
     m_wifi_process->setProcessChannelMode(QProcess::MergedChannels);
     m_wifi_process->setProperty("type",p_wifi_disable);
+    setbusy(true);
     m_wifi_process->start("nmcli", args);
-
-    setwifi_enabeled(false);
 }
 
 void Wifi::scan_wifi()
 {
+
     if(!m_wifi_enabeled){
         enable_wifi();
+
+        return;
     }
-    if (m_wifi_process->state()==QProcess::Running){
+    if (m_wifi_process->state() == QProcess::Running) {
+        qDebug() << "Process is still running, skipping scan";
+        return;
+    }
+    if (m_wifi_process->property("type")== p_wifi_scan){
         qDebug() << "wifi is already scanning";
         return;
     }
+
     QStringList args = {"-f", "SSID", "device", "wifi", "list"};
     m_wifi_process->setProcessChannelMode(QProcess::MergedChannels);
+    m_wifi_process->setProperty("type",p_wifi_scan);
+    setbusy(true);
     m_wifi_process->start("nmcli", args);
 }
 
 
 void Wifi::connect_wifi()
 {
-    if (m_wifi_process->state() == QProcess::Running) {
+    if (m_wifi_process->property("type")== p_wifi_connect) {
         m_wifi_process->kill();
         m_wifi_process->waitForFinished();
     }
 
     if (m_ssid.isEmpty()) {
-        emit connectionFailed("SSID is empty!");
+        emit connected(false,"SSID is empty!");
         return;
     }
 
@@ -90,13 +100,14 @@ void Wifi::connect_wifi()
     if (!m_password.isEmpty()) {
         args <<"password"<<m_password;
     }
-
+    m_wifi_process->setProperty("type",p_wifi_connect);
+    setbusy(true);
     m_wifi_process->start("nmcli", args);
-    qDebug()<<m_ssid<<"/n"<<m_password;
 }
 
 void Wifi::pingGoogle()
 {
+    //to do
     QProcess *pingProcess = new QProcess(this);
 
     connect(pingProcess, &QProcess::readyReadStandardOutput, this, [=]() {QString output = QString::fromUtf8(pingProcess->readAllStandardOutput());emit pingResult(true, output);});
@@ -117,77 +128,139 @@ void Wifi::pingGoogle()
     pingProcess->start("ping", args);
 }
 
-void Wifi::onProcessStarted(int id)
+void Wifi::onProcessStarted()
 {
-    qDebug() << "wifi Process started.";
     int type = m_wifi_process->property("type").toInt();
     switch (type) {
     case p_wifi_enable:
+
         qDebug() << "WiFi enable process started";
         break;
     case p_wifi_disable:
-        qDebug() << "Scan process started";
+
+        qDebug() << "WiFi disable process started";
         break;
     case p_wifi_scan:
-        qDebug() << "Connect process started";
-        break;
 
+        qDebug() << "Wifi Scan process started";
+        break;
     case p_wifi_connect:
-        qDebug() << "WiFi enable process started";
+
+        qDebug() << "WiFi connect process started";
         break;
     case p_wifi_ping:
-        qDebug() << "Scan process started";
+
+        qDebug() << "WiFi ping process started";
         break;
-
     }
-
-
-
 }
 
-void Wifi::onReadyReadStdOut(int id)
+void Wifi::onReadyReadStdOut()
 {
     QByteArray out = m_wifi_process->readAllStandardOutput();
     QString output = QString::fromUtf8(out).trimmed();
-
     QStringList lines = output.split("\n", Qt::SkipEmptyParts);
+
     if (!lines.isEmpty() && lines.first().contains("SSID")) lines.removeFirst();
     for (QString &line : lines) {
         line = line.trimmed();
     }
-    m_wifi_list->setStringList(lines);
-    emit command_out(output);
+
+    int type = m_wifi_process->property("type").toInt();
+    switch (type) {
+    case p_wifi_scan:
+
+        m_wifi_list->setStringList(lines);
+        emit command_out(output);
+        break;
+    case p_wifi_connect:
+
+        break;
+    case p_wifi_ping:
+
+        break;
+    default:
+
+        break;
+    }
 }
 
-void Wifi::onReadyReadStdErr(int id)
+void Wifi::onReadyReadStdErr()
 {
     QByteArray err = m_wifi_process->readAllStandardError();
     QString error = QString::fromUtf8(err).trimmed();
     if (!error.isEmpty()){
-
+        qDebug() << "error: "<<error;
         emit command_err(error);
     }
+    int type = m_wifi_process->property("type").toInt();
+    switch (type) {
+    case p_wifi_connect:
 
+
+        emit connected(false, "Process error occurred");
+        break;
+    }
 }
 
-void Wifi::onProcessFinished(int id,int exitCode, QProcess::ExitStatus status)
+void Wifi::onProcessFinished(int exitCode, QProcess::ExitStatus status)
 {
-    qDebug() << " wifi Process finished. Exit code:" << exitCode << "Status:" << status;
-    if (m_waiting_for_scan) {
-        m_waiting_for_scan = false;
-        scan_wifi();
+    int type = m_wifi_process->property("type").toInt();
+    switch (type) {
+    case p_wifi_enable:
+
+        if (exitCode == 0) {
+            setwifi_enabeled(true);
+            qDebug() << "wiFi enabled";
+            QTimer::singleShot(300, this, &Wifi::scan_wifi);
+        } else {
+            qDebug() << "wiFi enabled error code: "<<exitCode;
+        }
+        break;
+    case p_wifi_disable:
+
+        qDebug() << "WiFi disable process started";
+        if (exitCode == 0) {
+            setwifi_enabeled(false);
+            qDebug() << "wiFi disabled";
+        } else {
+            qDebug() << "wiFi disable error!";
+        }
+        break;
+    case p_wifi_scan:
+
+        if (exitCode == 0) {
+            qDebug() << "Wifi Scan  finished";
+        } else {
+            qDebug() << "Wifi Scan error";
+        }
+        break;
+
+    case p_wifi_connect:
+
+        if (exitCode == 0) {
+            qDebug() << "WiFi connected";
+            emit connected(true);
+        } else {
+            emit connected(false,"Connection failed!");
+        }
+        break;
+    case p_wifi_ping:
+
+        //to do
+        break;
     }
-    if (exitCode == 0) {
-        emit connected();
-    } else {
-        emit connectionFailed("Connection failed!");
-    }
+    qDebug() <<"Exit code:" << exitCode << "Status:" << status<<Qt::endl ;
+    setbusy(false);
+    m_wifi_process->setProperty("type", p_non);
 }
 
-void Wifi::onProcessError(int id,QProcess::ProcessError error)
+void Wifi::onProcessError(QProcess::ProcessError error)
 {
     qDebug() << "wifi Process error:" << error;
     emit command_err("wifi Process error: " + QString::number(error));
+    setbusy(false);
+    m_wifi_process->setProperty("type", p_non);
 }
 
 bool Wifi::wifi_enabeled() const
@@ -227,4 +300,17 @@ void Wifi::setSsid(const QString &newSsid)
         return;
     m_ssid = newSsid;
     emit ssidChanged();
+}
+
+bool Wifi::busy() const
+{
+    return m_busy;
+}
+
+void Wifi::setbusy(bool newBusy)
+{
+    if (m_busy == newBusy)
+        return;
+    m_busy = newBusy;
+    emit busyChanged();
 }

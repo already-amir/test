@@ -11,10 +11,11 @@
 class Wifi : public QObject
 {
     Q_OBJECT
+
+    Q_PROPERTY(bool busy READ busy WRITE setbusy NOTIFY busyChanged FINAL)
     Q_PROPERTY(QString password READ password WRITE setpassword NOTIFY passwordChanged FINAL)
     Q_PROPERTY(QString ssid READ ssid WRITE setSsid NOTIFY ssidChanged FINAL)
     Q_PROPERTY(bool wifi_enabeled READ wifi_enabeled WRITE setwifi_enabeled NOTIFY wifi_enabeledChanged FINAL)
-
     Q_PROPERTY(QStringListModel* wifi_list READ wifi_list WRITE setwifi_list NOTIFY wifi_listChanged FINAL)
 
 public:
@@ -38,6 +39,10 @@ public:
     QString ssid() const;
     void setSsid(const QString &newSsid);
 
+    bool busy() const;
+
+    void setbusy(bool newBusy);
+
 signals:
 
     void wifi_listChanged();
@@ -47,26 +52,28 @@ signals:
 
     void command_out(const QString& output);
     void command_err(const QString& error);
-    void connected();
-    void connectionFailed(QString reason);
+
+
+    void connected(bool status,QString reason="");
     void pingResult(bool success, QString output);
+
+    void busyChanged();
 
 private slots:
 
-    void onProcessStarted(int id);
-    void onReadyReadStdOut(int id);
-    void onReadyReadStdErr(int id);
-    void onProcessFinished(int id,int exitCode, QProcess::ExitStatus status);
-    void onProcessError(int id,QProcess::ProcessError error);
+    void onProcessStarted( );
+    void onReadyReadStdOut( );
+    void onReadyReadStdErr( );
+    void onProcessFinished( int exitCode, QProcess::ExitStatus status);
+    void onProcessError(QProcess::ProcessError error);
 
 private:
     QStringListModel *m_wifi_list = nullptr;
     QProcess* m_wifi_process;
     bool m_wifi_enabeled;
-    bool m_waiting_for_scan;
     QString m_password;
     QString m_ssid;
-    int m_id;
+
     enum WifiProcessType {
         p_non,
         p_wifi_enable,
@@ -76,6 +83,7 @@ private:
         p_wifi_ping
     };
 
+    bool m_busy;
 };
 
 #endif // WIFI_H

@@ -3,12 +3,12 @@ import QtQuick.Window 2.15
 
 Window {
     id:appWindow
-    //visibility: Window.FullScreen
+    //
     width: 800
     height: 480
+    //visibility: Window.FullScreen
     visible: true
-    title: "Parlar"
-
+    title: "ELEVIA"
 
     Loader {
         id: pageLoader
@@ -16,12 +16,5 @@ Window {
         source: "res/Page_start.qml"
 
     }
-
-
-
-
-
-
-
 }
 

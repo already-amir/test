@@ -25,7 +25,7 @@ Glassy{
 
         delegate: Glassy {
             g_width: wifi_bottom_main.width*0.96
-            g_heigh: wifi_panel_id.selectedIndex === index ? 140 : 50
+            g_heigh: wifi_panel_id.selected_index === index ? 140 : 50
 
 
             Behavior on g_heigh {
@@ -50,10 +50,10 @@ Glassy{
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            if (wifi_panel_id.selectedIndex === index)
-                                wifi_panel_id.selectedIndex = -1
+                            if (wifi_panel_id.selected_index === index)
+                                wifi_panel_id.selected_index = -1
                             else {
-                                wifi_panel_id.selectedIndex = index
+                                wifi_panel_id.selected_index = index
                                 wifi.ssid = model.display
                             }
                         }
@@ -62,7 +62,7 @@ Glassy{
 
                 Item {
                     width: parent.width
-                    height: wifi_panel_id.selectedIndex === index ? 80 : 0
+                    height: wifi_panel_id.selected_index === index ? 80 : 0
                     clip: true
 
                     Behavior on height {
@@ -78,7 +78,7 @@ Glassy{
                             placeholderText: "Enter password..."
                             echoMode: TextInput.Password
                             onTextChanged: {
-                                if (wifi_panel_id.selectedIndex === index)
+                                if (wifi_panel_id.selected_index === index)
                                     wifi.password = text
                             }
                         }
@@ -100,6 +100,11 @@ Glassy{
 
         }
     }
+    //
+
+
+
+
 
 
 }
