@@ -1,5 +1,5 @@
 import QtQuick 2.15
-import QtQuick.Controls 2.15
+
 import "../"
 Glassy{
 
@@ -73,13 +73,48 @@ Glassy{
                         anchors.fill: parent
                         spacing: 6
 
-                        TextField {
+                        Rectangle {
                             id: passField
-                            placeholderText: "Enter password..."
-                            echoMode: TextInput.Password
-                            onTextChanged: {
-                                if (wifi_panel_id.selectedIndex === index)
-                                    wifi.password = text
+                            width: 250
+                            height: 40
+                            radius: 6
+                            color: "#222"
+                            border.color: passInput.activeFocus ? "#00A8FF" : "#555"
+                            border.width: 1
+
+                            property string placeholder: "Enter password..."
+
+                            TextInput {
+                                id: passInput
+                                anchors.fill: parent
+                                anchors.margins: 8
+
+                                color: "white"
+                                focus: true
+
+                                echoMode: TextInput.Password
+                                font.pixelSize: 14
+
+                                onTextChanged: {
+                                    if (wifi_panel_id.selectedIndex === index)
+                                        wifi.password = text
+                                }
+                            }
+
+
+                            Text {
+                                text: passContainer.placeholder
+                                color: "#888"
+                                anchors.verticalCenter: parent.verticalCenter
+                                anchors.left: parent.left
+                                anchors.leftMargin: 10
+                                visible: passInput.text.length === 0
+                                font.pixelSize: 14
+                            }
+
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: passInput.forceActiveFocus()
                             }
                         }
                         Icon{
