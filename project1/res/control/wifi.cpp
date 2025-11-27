@@ -94,10 +94,7 @@ void Wifi::pingGoogle()
 {
     QProcess *pingProcess = new QProcess(this);
 
-    connect(pingProcess, &QProcess::readyReadStandardOutput, this, [=]() {
-        QString output = QString::fromUtf8(pingProcess->readAllStandardOutput());
-        emit pingResult(true, output);
-    });
+    connect(pingProcess, &QProcess::readyReadStandardOutput, this, [=]() {QString output = QString::fromUtf8(pingProcess->readAllStandardOutput());emit pingResult(true, output);});
 
     connect(pingProcess,
             QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),

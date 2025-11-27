@@ -32,6 +32,16 @@ Item {
             else
                 console.log("❌ No internet:", output)
         }
+        function onConnected() {
+            console.log("✅ Connected to WiFi")
+        }
+
+        function onConnectionFailed(reason) {
+            console.log("❌ Connection failed:", reason)
+        }
+        function onWifi_listChanged() {
+            console.log("WiFi list updated")
+        }
     }
 
 
