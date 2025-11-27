@@ -32,5 +32,8 @@
         <file>res/setting/Wifi_panel.qml</file>
         <file>res/img/ping.png</file>
         <file>res/img/loading.gif</file>
+        <file>res/setting/Left_side_panel.qml</file>
+        <file>res/img/bluetooth.png</file>
+        <file>res/img/no_bluetooth.png</file>
     </qresource>
 </RCC>

@@ -11,6 +11,7 @@ Wifi::Wifi(QObject *parent)
     connect(m_wifi_process, &QProcess::readyReadStandardError, this, &Wifi::onReadyReadStdErr);
     connect(m_wifi_process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &Wifi::onProcessFinished);
     connect(m_wifi_process, &QProcess::errorOccurred, this, &Wifi::onProcessError);
+    check_we();
 }
 
 QStringListModel *Wifi::wifi_list() const
@@ -126,6 +127,17 @@ void Wifi::pingGoogle()
 
     QStringList args = {"-c", "3", "8.8.8.8"};   // او میتونی google.com هم بزاری
     pingProcess->start("ping", args);
+}
+
+void Wifi::check_we()
+{
+    QProcess check;
+    check.start("nmcli", {"radio", "wifi"});
+    check.waitForFinished();
+    QString out = QString::fromUtf8(check.readAllStandardOutput()).trimmed();
+    bool enabled = (out == "enabled");
+
+    setwifi_enabeled(enabled);
 }
 
 void Wifi::onProcessStarted()

@@ -6,7 +6,7 @@ Item {
     anchors.fill:parent
 
     property int selected_index: -1
-    property int selected_panel: -1
+
 
     Wifi_Top{
 
@@ -60,11 +60,13 @@ Item {
             else
                 console.log("❌ No internet:", output)
         }
-        function onConnected(success) {
+        function onConnected(success,reason) {
 
-
-            if (success)
+            if (success){
                 console.log("✅ Connected to WiFi")
+                //connect_b.text="connected"
+            }
+
             else
                 console.log("❌ Connection failed:", reason)
         }

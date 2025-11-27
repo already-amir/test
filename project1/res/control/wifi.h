@@ -18,17 +18,21 @@ class Wifi : public QObject
     Q_PROPERTY(bool wifi_enabeled READ wifi_enabeled WRITE setwifi_enabeled NOTIFY wifi_enabeledChanged FINAL)
     Q_PROPERTY(QStringListModel* wifi_list READ wifi_list WRITE setwifi_list NOTIFY wifi_listChanged FINAL)
 
+
 public:
     explicit Wifi(QObject *parent = nullptr);
 
-    QStringListModel *wifi_list() const;
-    void setwifi_list(QStringListModel *newWifi_list);
 
     Q_INVOKABLE void enable_wifi();
     Q_INVOKABLE void disable_wifi();
     Q_INVOKABLE void scan_wifi();
     Q_INVOKABLE void connect_wifi();
     Q_INVOKABLE void pingGoogle();
+
+    void check_we();
+
+    QStringListModel *wifi_list() const;
+    void setwifi_list(QStringListModel *newWifi_list);
 
     bool wifi_enabeled() const;
     void setwifi_enabeled(bool newWifi_enabeled);
@@ -40,7 +44,6 @@ public:
     void setSsid(const QString &newSsid);
 
     bool busy() const;
-
     void setbusy(bool newBusy);
 
 signals:
@@ -66,6 +69,8 @@ private slots:
     void onReadyReadStdErr( );
     void onProcessFinished( int exitCode, QProcess::ExitStatus status);
     void onProcessError(QProcess::ProcessError error);
+
+
 
 private:
     QStringListModel *m_wifi_list = nullptr;

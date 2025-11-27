@@ -83,12 +83,33 @@ Glassy{
                             }
                         }
                         Icon{
+                            id:connect_b
                             i_text: "connect"
                             i_heights:passField.height
                             i_width: passField.height*3
                             onClicked: {
                                 wifi.ssid = model.display
                                 wifi.connect_wifi()
+                            }
+
+                            Connections{
+                                target: wifi
+                                function onConnected(success,reason) {
+
+                                    if (success){
+                                        console.log("✅ Connected to WiFi")
+                                        connect_b.i_text="connected"
+
+                                    }
+
+                                    else{
+                                        console.log("❌ Connection failed:", reason)
+                                        connect_b.i_text="not connected"+reason
+                                    }
+
+
+
+                                }
                             }
                         }
 

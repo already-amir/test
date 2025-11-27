@@ -7,7 +7,8 @@ Glassy{
     g_width: setting_main.width * 0.7
     g_heigh: setting_main.height *0.9
 
+
     Wifi_panel{
-        visible: (wifi_panel_id.selected_panel===2)
+        visible: (setting_main.selected_panel===1)
     }
 }
