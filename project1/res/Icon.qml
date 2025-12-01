@@ -1,4 +1,8 @@
 import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtGraphicalEffects 1.15
+
+
 
 Item {
 
@@ -9,6 +13,8 @@ Item {
     property string i_img: ""
     property string i_text:""
     signal clicked()
+
+    property bool name: value
 
     width: i_width
     height: i_heights
@@ -35,5 +41,10 @@ Item {
             anchors.fill: parent
             onClicked: icon.clicked()
         }
+
+        //
+
+
+
     }
 }

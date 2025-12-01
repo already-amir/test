@@ -35,5 +35,6 @@
         <file>res/setting/Left_side_panel.qml</file>
         <file>res/img/bluetooth.png</file>
         <file>res/img/no_bluetooth.png</file>
+        <file>res/Glob_var.qml</file>
     </qresource>
 </RCC>
