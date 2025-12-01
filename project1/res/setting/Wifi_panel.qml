@@ -44,37 +44,8 @@ Item {
     }
 
 
-    Connections {
-        target: wifi
 
-        function onCommand_out(output) {
-            //logBox.text += "\n" + output
-        }
 
-        function onCommand_err(error) {
-            //logBox.text += "\n[ERROR] " + error
-        }
-        function onPingResult(success, output) {
-            if (success)
-                console.log("✅ Connected to internet:", output)
-            else
-                console.log("❌ No internet:", output)
-        }
-        function onConnected(success,reason) {
-
-            if (success){
-                console.log("✅ Connected to WiFi")
-                //connect_b.text="connected"
-            }
-
-            else
-                console.log("❌ Connection failed:", reason)
-        }
-
-        function onWifi_listChanged() {
-            console.log("WiFi list updated")
-        }
-    }
 
 
 

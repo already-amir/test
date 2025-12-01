@@ -14,8 +14,6 @@ Item {
     property string i_text:""
     signal clicked()
 
-    property bool name: value
-
     width: i_width
     height: i_heights
 

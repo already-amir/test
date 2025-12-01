@@ -11,4 +11,7 @@ Glassy{
     Wifi_panel{
         visible: (setting_main.selected_panel===1)
     }
+    Bluetooth_panel{
+        visible: (setting_main.selected_panel===2)
+    }
 }

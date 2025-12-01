@@ -42,9 +42,10 @@ Glassy{
                     height: 50
 
                     Text {
-                        text: model.display
+                        text: model.display + (wifi.connected_ssid === model.display ? "  (Connected)" : "")
                         font.pixelSize: 16
                         font.bold: true
+                        color: wifi.connected_ssid === model.display ? "green" : "white"
                     }
 
                     MouseArea {
@@ -68,13 +69,15 @@ Glassy{
                     Behavior on height {
                         NumberAnimation { duration: 150 }
                     }
-
                     Row {
-                        anchors.fill: parent
+                        id:row1
+                        anchors.top:parent.top
+                        anchors.left: parent.left
                         spacing: 6
 
                         TextField {
                             id: passField
+                            visible: wifi.connected_ssid !== model.display
                             placeholderText: "Enter password..."
                             echoMode: TextInput.Password
                             onTextChanged: {
@@ -82,50 +85,70 @@ Glassy{
                                     wifi.password = text
                             }
                         }
+
                         Icon{
                             id:connect_b
-                            i_text: "connect"
+                            i_text: wifi.connected_ssid === model.display ? "Connected ? todo" : "Connect"
                             i_heights:passField.height
                             i_width: passField.height*3
+
                             onClicked: {
-                                wifi.ssid = model.display
-                                wifi.connect_wifi()
+                                if (wifi.connectedSsid === model.display)
+                                    wifi.disconnect_wifi()
+                                else {
+                                    wifi.ssid = model.display
+                                    wifi.connect_wifi()
+                                }
+
+
+
                             }
+                        }
+
+                        Text {
+                            anchors.left: parent.left
+                            anchors.top:row1.bottom
+                            id: text_id
+                            text: qsTr("")
+                            color: "red"
 
                             Connections{
                                 target: wifi
                                 function onConnected(success,reason) {
 
-                                    if (success){
-                                        console.log("✅ Connected to WiFi")
-                                        connect_b.i_text="connected"
-
+                                    if (!success &&wifi_panel_id.selected_index === index ){
+                                        text_id.text="Not connected:"+reason
                                     }
+                                }
+                            }
+                        }
+                        Text {
+                            anchors.left: text_id.right
+                            anchors.top:row1.bottom
+                            id: text_id_2
+                            text: qsTr("")
+                            color: "green"
 
-                                    else{
-                                        console.log("❌ Connection failed:", reason)
-                                        connect_b.i_text="not connected"+reason
+                            Connections{
+                                target: wifi
+                                function onping_out(success,reason) {
+
+                                    if (success &&wifi_panel_id.selected_index === index ){
+                                        text_id_2.text="Not connected to internet: "+reason
                                     }
-
-
-
+                                    else if(!success &&wifi_panel_id.selected_index === index){
+                                        text_id_2.text="Not connected to internet: "+reason
+                                        text_id_2.color="red"
+                                    }
                                 }
                             }
                         }
 
-
                     }
                 }
             }
-
-
         }
+
+
     }
-    //
-
-
-
-
-
-
 }

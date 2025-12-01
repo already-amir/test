@@ -15,6 +15,7 @@ Window {
         anchors.fill: parent
         source: "res/Page_start.qml"
 
+
     }
 }
 
