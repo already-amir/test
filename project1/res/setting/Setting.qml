@@ -4,6 +4,7 @@ Item {
     anchors.fill:parent
     id:setting_main
     property int selected_panel: -1
+
     Image {
         id: image
         anchors.fill: parent
@@ -13,9 +14,7 @@ Item {
 
     Row{
         anchors.centerIn: parent
-        spacing: 20
-
-
+        spacing: parent.width*0.02
 
         Left_side{
 

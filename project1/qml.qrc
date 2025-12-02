@@ -15,8 +15,8 @@
         <file>res/3d/P3d.qml</file>
         <file>res/boiler/Boiler.qml</file>
         <file>res/setting/Setting.qml</file>
-        <file>res/home/Left_side_panel.qml</file>
-        <file>res/home/Right_side_panel.qml</file>
+        <file>res/home/Left_side.qml</file>
+        <file>res/home/Right_side.qml</file>
         <file>res/home/Cl1.qml</file>
         <file>res/home/Cl2.qml</file>
         <file>res/home/Cl3.qml</file>
@@ -32,12 +32,12 @@
         <file>res/setting/Wifi_panel.qml</file>
         <file>res/img/ping.png</file>
         <file>res/img/loading.gif</file>
-        <file>res/setting/Left_side_panel.qml</file>
         <file>res/img/bluetooth.png</file>
         <file>res/img/no_bluetooth.png</file>
         <file>res/Glob_var.qml</file>
         <file>res/setting/Bluetooth_panel.qml</file>
         <file>res/control/bluetooth.h</file>
         <file>res/control/bluetooth.cpp</file>
+        <file>res/Left_side_panel.qml</file>
     </qresource>
 </RCC>

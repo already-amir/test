@@ -4,13 +4,12 @@ import QtQuick 2.15
 Item {
     Glob_var{
         id:glob
-
     }
+
     property real r: glob.red/256
     property real g: glob.green/256
     property real b: glob.blue/256
     property real t: glob.tran/100
-
 
     id: glassy
     property int g_width: 100

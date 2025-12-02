@@ -7,13 +7,11 @@ Column {
 
    Glassy{
         width:panel_id.width * 0.3
-        height:panel_id.height *0.25
-
+        height:panel_id.height *0.2
     }
+
    Glassy{
         width:panel_id.width * 0.3
         height:panel_id.height *0.75
-
     }
-
 }

@@ -8,12 +8,10 @@ Column {
    Glassy{
         width:panel_id.width * 0.30
         height:panel_id.height *0.66
-
     }
+
    Glassy{
         width:panel_id.width * 0.30
         height:panel_id.height *0.33
-
     }
-
 }

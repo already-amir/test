@@ -7,5 +7,4 @@ Item {
         height: 169
         color:"red"
     }
-
 }

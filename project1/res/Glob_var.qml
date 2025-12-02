@@ -6,5 +6,4 @@ Item {
     property int green: 256
     property int blue: 256
     property int tran: 10
-
 }

@@ -14,19 +14,18 @@ Item{
 
     Icon{
         id:exit
-
-        i_size: Math.min(parent.width,parent.height)/8
+        i_size: parent.height * 0.2
         anchors.right: parent.right
         anchors.top:parent.top
-        anchors.rightMargin: 8
-        anchors.topMargin: 8
+        anchors.rightMargin: parent.width *0.02
+        anchors.topMargin: parent.height *0.02
         i_img: "img/ross.png"
         onClicked: pageLoader.source = "../Page_start.qml"
     }
 
     // GlassButton.qml
 
-
+    /*
     Button {
         id: control
         width: 500
@@ -105,7 +104,7 @@ Item{
             NumberAnimation { properties: "scale,radius"; duration: 120; easing.type: Easing.OutQuad }
         }
     }
-
+*/
 
 }
 

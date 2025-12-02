@@ -105,6 +105,8 @@ Glassy{
                             }
                         }
 
+                    }
+
                         Text {
                             anchors.left: parent.left
                             anchors.top:row1.bottom
@@ -144,7 +146,7 @@ Glassy{
                             }
                         }
 
-                    }
+
                 }
             }
         }

@@ -16,13 +16,13 @@ Item{
         Rectangle{
            width:right_side.width*0.9
            height: right_side.height *0.15
-
         }
 
         Item{
             id:panel_id
             width:right_side.width*0.90
             height: right_side.height *0.75
+
             Row{
                 anchors.centerIn: parent
                 spacing: panel_id.width * 0.02
@@ -38,11 +38,5 @@ Item{
                 }
             }
         }
-
-
     }
-
-
-
-
 }

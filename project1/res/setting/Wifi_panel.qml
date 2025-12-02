@@ -7,10 +7,10 @@ Item {
 
     property int selected_index: -1
 
-
     Wifi_Top{
 
     }
+
     Wifi_Bottom{
 
     }
@@ -31,22 +31,13 @@ Item {
             anchors.fill: parent
             enabled: wifi.busy
         }
+
         Image {
             anchors.centerIn: parent
             visible: wifi.busy
-
-
             source: "../img/loading.gif"
             width: 40
             height: 40
-
         }
     }
-
-
-
-
-
-
-
 }

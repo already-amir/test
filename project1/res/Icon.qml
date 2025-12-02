@@ -27,22 +27,18 @@ Item {
             height: parent.height*0.7
             anchors.centerIn: parent
         }
+
         Text{
             id:text_id
             text:i_text
             anchors.centerIn: parent
             font.bold: true
             font.pixelSize: parent.width/(text.length*0.7)
-
         }
+
         MouseArea{
             anchors.fill: parent
             onClicked: icon.clicked()
         }
-
-        //
-
-
-
     }
 }

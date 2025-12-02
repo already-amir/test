@@ -3,8 +3,6 @@ import "../"
 
 Glassy{
     id:wifi_top_main
-
-
     anchors.top: wifi_panel_id.top
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.topMargin: parent.height * 0.05
