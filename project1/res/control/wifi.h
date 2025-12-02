@@ -29,7 +29,6 @@ public:
     Q_INVOKABLE void disable_wifi();
     Q_INVOKABLE void scan_wifi();
     Q_INVOKABLE void connect_wifi();
-    Q_INVOKABLE void pingGoogle();
     Q_INVOKABLE void disconnect();
 
     void check_we();
@@ -104,7 +103,6 @@ private:
         p_wifi_disable,
         p_wifi_scan,
         p_wifi_connect,
-        p_wifi_ping,
         p_wifi_disconnect
     };
 

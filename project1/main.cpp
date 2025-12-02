@@ -4,6 +4,7 @@
 #include<QQmlContext>
 
 #include "res/control/wifi.h"
+#include "res/control/bluetooth.h"
 
 int main(int argc, char *argv[])
 {
@@ -13,9 +14,11 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     Wifi wifi_handel;
+    Bluetooth bluetooth;
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextProperty("wifi",&wifi_handel);
+    engine.rootContext()->setContextProperty("bluetooth",&bluetooth);
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(

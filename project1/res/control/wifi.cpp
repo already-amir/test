@@ -111,22 +111,6 @@ void Wifi::connect_wifi()
     m_wifi_process->start("nmcli", args);
 }
 
-void Wifi::pingGoogle()
-{
-    if (m_wifi_process->property("type")== p_wifi_ping){
-        qDebug() << "wifi is already pinging";
-        return;
-    }
-    if (m_wifi_process->state() == QProcess::Running) {
-        qDebug() << "Process is still running, skipping scan";
-        return;
-    }
-
-    QStringList args = {"-c", "3", "8.8.8.8"};
-    m_wifi_process->setProperty("type",p_wifi_ping);
-    m_wifi_process->start("ping", args);
-}
-
 void Wifi::disconnect()
 {
     if (m_wifi_process->state() == QProcess::Running) {
@@ -152,10 +136,12 @@ void Wifi::check_we()
     check.start("nmcli", {"radio", "wifi"});
     check.waitForFinished();
     QString out = QString::fromUtf8(check.readAllStandardOutput()).trimmed();
-    bool enabled = (out == "enabled");
 
-    setwifi_enabeled(enabled);
-    scan_wifi();
+    if(out == "enabled"){
+        scan_wifi();
+        setwifi_enabeled(true);
+    }
+
 }
 
 void Wifi::onProcessStarted()
@@ -178,10 +164,7 @@ void Wifi::onProcessStarted()
 
         qDebug() << "WiFi connect process started";
         break;
-    case p_wifi_ping:
 
-        qDebug() << "WiFi ping process started";
-        break;
     case p_wifi_disconnect:
 
         qDebug() << "WiFi disconnect process started";
@@ -224,16 +207,12 @@ void Wifi::onReadyReadStdOut()
             cleanList.append(line);
         }
 
-        if (!lines.isEmpty()) lines.removeFirst();
+
         m_wifi_list->setStringList(cleanList);
         emit connected_ssidChanged();
         emit command_out(output);
         break;
     case p_wifi_connect:
-
-        m_std_msg=output;
-        break;
-    case p_wifi_ping:
 
         m_std_msg=output;
         break;
@@ -270,10 +249,6 @@ void Wifi::onReadyReadStdErr()
 
     case p_wifi_connect:
 
-        m_err_msg=error;
-        break;
-
-    case p_wifi_ping:
         m_err_msg=error;
         break;
 
@@ -328,17 +303,6 @@ void Wifi::onProcessFinished(int exitCode, QProcess::ExitStatus status)
         } else {
             qDebug() << "WiFi connection error";
             emit connected(false,m_std_msg);
-        }
-        break;
-
-    case p_wifi_ping:
-
-        if (exitCode == 0) {
-            qDebug() << "ping completed";
-            ping_out(true,m_std_msg);
-        } else {
-            qDebug() << "ping completion error";
-            ping_out(false,m_std_msg);
         }
         break;
 

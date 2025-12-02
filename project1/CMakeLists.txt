@@ -14,6 +14,11 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -45,6 +50,12 @@ else()
           res/control/wifi.h res/control/wifi.cpp
           res/3d/P3d.qml res/boiler/Boiler.qml res/control/wifi.cpp res/control/wifi.h res/home/Cl1.qml res/home/Cl2.qml res/home/Cl3.qml res/home/Home.qml res/home/Left_side.qml res/home/Right_side.qml res/img/ab.jpg res/img/boiler.png res/img/grc.jpg res/img/home.png res/img/loading.gif res/img/P3d.png res/img/ping.png res/img/ross.png res/img/scan.png res/img/settings.png res/img/wifi_off.png res/img/wifi_on.png res/setting/Left_side.qml res/setting/Right_side.qml res/setting/Setting.qml res/setting/Wifi_Bottom.qml res/setting/Wifi_panel.qml res/setting/Wifi_Top.qml res/Glassy.qml res/Icon.qml res/Page_start.qml
 
+          res/control/blue.h res/control/blue.cpp
+          res/control/bluetooth.h res/control/bluetooth.cpp
+
+
+
+
         )
     endif()
 endif()
@@ -52,6 +63,11 @@ endif()
 target_link_libraries(project1
   PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick)
 target_link_libraries(project1 PRIVATE Qt5::Core)
+target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)

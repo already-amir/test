@@ -24,13 +24,7 @@ Glassy{
         }
     }
 
-    Icon{
-        anchors.horizontalCenter: parent.horizontalCenter
-        i_size: parent.height
-        onClicked: wifi.pingGoogle()
-        i_img: "img/ping.png"
-        visible: wifi.wifi_enabeled
-    }
+
 
     Icon{
         id:wifi_top_main_glass
