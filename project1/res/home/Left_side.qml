@@ -13,17 +13,14 @@ Glassy{
     anchors.horizontalCenter: parent.horizontalCenter
     spacing: parent.height * 0.02
 
-    Left_side_panel{
-      id:wifi_p_id
-      p_width: main_left.width *0.8
-      p_heights: main_left.height *0.1
-      p_img: "img/ross.png"
-      p_txt: "BACK"
+    Icon{
+      i_width: main_left.width *0.8
+      i_heights: main_left.height *0.1
 
-      MouseArea{
-        anchors.fill: parent
-        onClicked: pageLoader.source = "../Page_start.qml"
-      }
+      i_text: "BACK"
+      onClicked: pageLoader.source = "../Page_start.qml"
     }
+
+
   }
 }

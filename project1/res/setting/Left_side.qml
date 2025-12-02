@@ -13,35 +13,28 @@ Glassy{
         anchors.horizontalCenter: parent.horizontalCenter
         spacing: parent.height * 0.02
 
-        Left_side_panel{
+        Icon{
             id:wifi_p_id
-            p_width: left_side_main.width *0.8
-            p_heights: left_side_main.height *0.1
-            p_img: "img/wifi_on.png"
-            p_txt: "WIFI"
-            p_id: 1
+            i_width: left_side_main.width *0.8
+            i_heights: left_side_main.height *0.1
+            i_img: "img/wifi_on.png"
+            i_text: "WIFI"
+            onClicked: selected_panel=1
         }
-
-        Left_side_panel{
+        Icon{
             id:bluetooth_p_id
-            p_width: left_side_main.width *0.8
-            p_heights: left_side_main.height *0.1
-            p_img: "img/bluetooth.png"
-            p_txt: "BLUETOOTH"
-            p_id: 2
+            i_width: left_side_main.width *0.8
+            i_heights: left_side_main.height *0.1
+            i_img: "img/bluetooth.png"
+            i_text: "BLUETOOTH"
+            onClicked: selected_panel=2
         }
-
-        Left_side_panel{
+        Icon{
             id:exit_p_id
-            p_width: left_side_main.width *0.8
-            p_heights: left_side_main.height *0.1
-            //p_img: "../img/ross.png"
-            p_txt: "BACK"
-            p_id: -1
-            MouseArea{
-                anchors.fill: parent
-                onClicked: pageLoader.source = "../Page_start.qml"
-            }
+            i_width: left_side_main.width *0.8
+            i_heights: left_side_main.height *0.1
+            i_text: "BACK"
+            onClicked: pageLoader.source = "../Page_start.qml"
         }
     }
 }

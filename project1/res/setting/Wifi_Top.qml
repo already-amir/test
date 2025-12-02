@@ -13,6 +13,7 @@ Glassy{
         anchors.left: parent.left
         i_img: wifi.wifi_enabeled ? "img/wifi_on":"img/wifi_off"
         i_size: parent.height
+
         onClicked:{
             if(wifi.wifi_enabeled){
                 wifi.disable_wifi()
@@ -31,33 +32,14 @@ Glassy{
         visible: wifi.wifi_enabeled
     }
 
-    Glassy{
+    Icon{
         id:wifi_top_main_glass
         anchors.right:parent.right
-        g_width:row_id1.width+20
-        g_heigh:parent.height
+        i_width:parent.height*3
+        i_heights:parent.height
+        i_text: "scan"
+        i_img:"img/scan"
         visible: wifi.wifi_enabeled
-        Row{
-            id:row_id1
-            anchors.right: wifi_top_main_glass.right
-            spacing:20
-            Text {
-                text: qsTr("scan")
-                visible: wifi.wifi_enabeled
-                font.pixelSize: 20
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.leftMargin: 20
-            }
-            Icon{
-                id:scan_id
-                i_img:"img/scan"
-                i_size: wifi_top_main_glass.height
-                visible: wifi.wifi_enabeled
-            }
-        }
-        MouseArea{
-            anchors.fill: parent
-            onClicked: wifi.scan_wifi()
-        }
+        onClicked: wifi.scan_wifi()
     }
 }

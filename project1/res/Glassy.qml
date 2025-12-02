@@ -1,7 +1,9 @@
 import QtQuick 2.15
-
+import QtGraphicalEffects 1.15
 
 Item {
+    id: glassy
+
     Glob_var{
         id:glob
     }
@@ -10,8 +12,6 @@ Item {
     property real g: glob.green/256
     property real b: glob.blue/256
     property real t: glob.tran/100
-
-    id: glassy
     property int g_width: 100
     property int g_heigh: 100
     property int g_round: 22

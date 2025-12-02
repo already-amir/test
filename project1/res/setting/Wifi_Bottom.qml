@@ -2,15 +2,10 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import "../"
 Glassy{
-
     id:wifi_bottom_main
-
-
-
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.top: parent.top
     anchors.topMargin: parent.height * 0.2
-
     visible: wifi.wifi_enabeled
     g_heigh: wifi_panel_id.height * 0.8
     g_width: wifi_panel_id.width * 0.9
@@ -23,12 +18,11 @@ Glassy{
         model: wifi.wifi_list
         clip: true
 
-        delegate: Glassy {
-            g_width: wifi_bottom_main.width*0.96
-            g_heigh: wifi_panel_id.selected_index === index ? 140 : 50
+        delegate: Icon {
+            i_width: wifi_bottom_main.width*0.96
+            i_heights: wifi_panel_id.selected_index === index ? 140 : 50
 
-
-            Behavior on g_heigh {
+            Behavior on i_heights {
                 NumberAnimation { duration: 150 }
             }
 
@@ -88,69 +82,65 @@ Glassy{
 
                         Icon{
                             id:connect_b
-                            i_text: wifi.connected_ssid === model.display ? "Connected ? todo" : "Connect"
+                            i_text: wifi.connected_ssid === model.display ? "Disconnect" : "Connect"
                             i_heights:passField.height
                             i_width: passField.height*3
 
                             onClicked: {
-                                if (wifi.connectedSsid === model.display)
-                                    wifi.disconnect_wifi()
+                                if (wifi.connected_ssid === model.display){
+                                    wifi.disconnect()
+                                }
+
                                 else {
                                     wifi.ssid = model.display
                                     wifi.connect_wifi()
                                 }
-
-
-
                             }
                         }
-
                     }
 
-                        Text {
-                            anchors.left: parent.left
-                            anchors.top:row1.bottom
-                            id: text_id
-                            text: qsTr("")
-                            color: "red"
+                    Text {
+                        anchors.left: parent.left
+                        anchors.top:row1.bottom
+                        id: text_id
+                        text: qsTr("")
+                        color: "red"
 
-                            Connections{
-                                target: wifi
-                                function onConnected(success,reason) {
+                        Connections{
+                            target: wifi
+                            function onConnected(success,reason) {
 
-                                    if (!success &&wifi_panel_id.selected_index === index ){
-                                        text_id.text="Not connected:"+reason
-                                    }
+                                if (!success &&wifi_panel_id.selected_index === index ){
+                                    text_id.text="Not connected:"+reason
+                                    console.log(reason)
                                 }
                             }
                         }
-                        Text {
-                            anchors.left: text_id.right
-                            anchors.top:row1.bottom
-                            id: text_id_2
-                            text: qsTr("")
-                            color: "green"
+                    }
 
-                            Connections{
-                                target: wifi
-                                function onping_out(success,reason) {
+                    Text {
+                        anchors.left: text_id.right
+                        anchors.top:row1.bottom
+                        id: text_id_2
+                        text: qsTr("")
+                        color: "green"
 
-                                    if (success &&wifi_panel_id.selected_index === index ){
-                                        text_id_2.text="Not connected to internet: "+reason
-                                    }
-                                    else if(!success &&wifi_panel_id.selected_index === index){
-                                        text_id_2.text="Not connected to internet: "+reason
-                                        text_id_2.color="red"
-                                    }
+                        Connections{
+                            target: wifi
+                            function onping_out(success,reason) {
+
+                                if (success &&wifi_panel_id.selected_index === index ){
+                                    text_id_2.text="Not connected to internet: "+reason
+                                }
+                                else if(!success &&wifi_panel_id.selected_index === index){
+                                    text_id_2.text="Not connected to internet: "+reason
+                                    text_id_2.color="red"
                                 }
                             }
                         }
-
-
+                    }
                 }
             }
         }
-
-
     }
 }

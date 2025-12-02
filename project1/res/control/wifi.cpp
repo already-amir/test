@@ -98,6 +98,9 @@ void Wifi::connect_wifi()
         return;
     }
 
+    QStringList delArgs = {"connection", "delete", m_ssid};
+    QProcess::execute("nmcli", delArgs);
+
     QStringList args = {"device", "wifi", "connect", m_ssid};
 
     if (!m_password.isEmpty()) {
@@ -152,6 +155,7 @@ void Wifi::check_we()
     bool enabled = (out == "enabled");
 
     setwifi_enabeled(enabled);
+    scan_wifi();
 }
 
 void Wifi::onProcessStarted()
@@ -290,7 +294,7 @@ void Wifi::onProcessFinished(int exitCode, QProcess::ExitStatus status)
         if (exitCode == 0) {
             setwifi_enabeled(true);
             qDebug() << "wiFi enabled";
-            QTimer::singleShot(300, this, &Wifi::scan_wifi);
+            QTimer::singleShot(2000, this, &Wifi::scan_wifi);
         } else {
             qDebug() << "wiFi enabled error code: "<<exitCode;
         }

@@ -4,7 +4,6 @@ import "../"
 Item {
     id:wifi_panel_id
     anchors.fill:parent
-
     property int selected_index: -1
 
     Wifi_Top{

@@ -25,6 +25,8 @@ Item {
 
             }
 
+
+
             Right_side{
 
             }

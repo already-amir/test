@@ -38,6 +38,5 @@
         <file>res/setting/Bluetooth_panel.qml</file>
         <file>res/control/bluetooth.h</file>
         <file>res/control/bluetooth.cpp</file>
-        <file>res/Left_side_panel.qml</file>
     </qresource>
 </RCC>
