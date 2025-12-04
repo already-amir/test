@@ -19,6 +19,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(PahoMqttCpp REQUIRED)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -52,6 +55,9 @@ else()
 
           res/control/blue.h res/control/blue.cpp
           res/control/bluetooth.h res/control/bluetooth.cpp
+          res/control/mqttclient.h res/control/mqttclient.cpp
+
+
 
 
 
@@ -71,7 +77,10 @@ target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
-
+target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_include_directories(${PROJECT_NAME} PRIVATE /usr/local/include)
+target_link_libraries(${PROJECT_NAME} PRIVATE PahoMqttCpp::paho-mqttpp3)
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.

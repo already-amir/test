@@ -1,4 +1,6 @@
 import QtQuick 2.15
+
+
 import "../"
 
 Item{
@@ -19,5 +21,55 @@ Item{
         i_img: "img/ross.png"
         onClicked: pageLoader.source = "../Page_start.qml"
     }
+
+    Row{
+        anchors.centerIn: parent
+        spacing :20
+
+        Rectangle{
+            width:100
+            height: 100
+
+            Text {
+
+                text: qsTr("connect")
+                anchors.centerIn: parent
+            }
+            MouseArea{
+                anchors.fill: parent
+                onClicked: client.conect_to_borker()
+            }
+        }
+
+        Rectangle{
+            width:100
+            height: 100
+
+            Text {
+
+                text: qsTr("subscribe")
+                anchors.centerIn: parent
+            }
+            MouseArea{
+                anchors.fill: parent
+                onClicked: client.subsciber()
+            }
+        }
+        Rectangle{
+            width:100
+            height: 100
+
+            Text {
+                text: qsTr("publish hello world")
+                anchors.centerIn: parent
+            }
+            MouseArea{
+                anchors.fill: parent
+                onClicked: client.publish()
+
+            }
+        }
+    }
+
 }
 
