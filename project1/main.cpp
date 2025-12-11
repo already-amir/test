@@ -5,6 +5,7 @@
 
 #include "res/control/wifi.h"
 #include "res/control/bluetooth.h"
+
 #include "res/control/mqttclient.h"
 
 int main(int argc, char *argv[])
@@ -18,11 +19,13 @@ int main(int argc, char *argv[])
     Bluetooth bluetooth;
     Mqttclient client;
 
+
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextProperty("wifi",&wifi_handel);
     engine.rootContext()->setContextProperty("bluetooth",&bluetooth);
-     engine.rootContext()->setContextProperty("client",&client);
+    engine.rootContext()->setContextProperty("mqttClient", &client);
+
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(

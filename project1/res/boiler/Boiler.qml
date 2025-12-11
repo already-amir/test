@@ -1,4 +1,5 @@
 import QtQuick 2.15
+import QtQuick.Controls 2.15
 
 
 import "../"
@@ -22,54 +23,59 @@ Item{
         onClicked: pageLoader.source = "../Page_start.qml"
     }
 
-    Row{
-        anchors.centerIn: parent
-        spacing :20
+    Column {
+            spacing: 10
+            anchors.centerIn: parent
 
-        Rectangle{
-            width:100
-            height: 100
-
-            Text {
-
-                text: qsTr("connect")
-                anchors.centerIn: parent
+            TextField {
+                id: topicInput
+                placeholderText: "Topic"
             }
-            MouseArea{
-                anchors.fill: parent
-                onClicked: client.conect_to_borker()
+
+            TextField {
+                id: messageInput
+                placeholderText: "Message"
+            }
+
+            Button {
+                text: "Connect"
+                onClicked: {
+                    mqttClient.connectToBroker("ws://192.168.0.29:5050/mqtt", "K6mntxTf9qUxYeUlpQOH")
+                }
+            }
+
+            Button {
+                text: "Publish"
+                onClicked: {
+                    mqttClient.publishMessage(topicInput.text, messageInput.text)
+                }
+            }
+
+            Button {
+                text: "Subscribe"
+                onClicked: {
+                    mqttClient.subscribeTopic(topicInput.text)
+                }
+            }
+
+            ListView {
+                id: msgList
+                width: parent.width
+                height: 150
+                model: ListModel {}
+
+                delegate: Text {
+                    text: model.topic + ": " + model.message
+                }
+            }
+
+            Connections {
+                target: mqttClient
+                onMessageReceived: {
+                    msgList.model.append({"topic": topic, "message": message})
+                }
             }
         }
-
-        Rectangle{
-            width:100
-            height: 100
-
-            Text {
-
-                text: qsTr("subscribe")
-                anchors.centerIn: parent
-            }
-            MouseArea{
-                anchors.fill: parent
-                onClicked: client.subsciber()
-            }
-        }
-        Rectangle{
-            width:100
-            height: 100
-
-            Text {
-                text: qsTr("publish hello world")
-                anchors.centerIn: parent
-            }
-            MouseArea{
-                anchors.fill: parent
-                onClicked: client.publish()
-
-            }
-        }
-    }
 
 }
 
