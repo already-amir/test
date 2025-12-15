@@ -217,7 +217,7 @@ void Wifi::onReadyReadStdOut()
 
             if (line.startsWith("*")) {
                 line = line.mid(1).trimmed();
-                m_connected_ssid = line.section(":", 0, 0);
+                m_connected_ssid = line.section(":", 0, 0).trimmed();
             }
 
             QString ssid  = line.section(":", 0, 0).trimmed();
@@ -225,22 +225,35 @@ void Wifi::onReadyReadStdOut()
             QString enc   = line.section(":", 2, 2).trimmed();
             QString bssid = line.section(":", 3, 3).trimmed();
 
+            if (ssid.isEmpty())
+                ssid = "?";
+
             cleanList.append(QString("%1 (%2%)").arg(ssid, pow));
 
             QJsonObject obj;
-            obj["ssid"]  = ssid;
-            obj["pow"]   = pow;
-            obj["enc"]   = enc;
-            obj["bssid"] = bssid;
+            obj["SSID"]  = ssid;
+            obj["POW"]   = pow;
+            obj["ENC"]   = enc;
+            obj["BSSID"] = bssid;
+
             wifiArray.append(obj);
         }
 
         m_wifi_list->setStringList(cleanList);
-         QJsonDocument doc(wifiArray);
-        emit wifiScanReady("v1/devices/me/telemetry",QString::fromUtf8(doc.toJson(QJsonDocument::Compact)));
+
+        QJsonDocument doc(wifiArray);
+        QTimer::singleShot(5000, this, [this, doc]() {
+            emit wifiScanReady(
+                "v1/devices/me/attributes",
+                QString::fromUtf8(doc.toJson(QJsonDocument::Compact))
+                );
+        });
+        //emit wifiScanReady("v1/devices/me/attributes",QString::fromUtf8(doc.toJson(QJsonDocument::Compact)));
+
         emit connected_ssidChanged();
         emit command_out(output);
         break;
+
     }
 
     case p_wifi_connect:
