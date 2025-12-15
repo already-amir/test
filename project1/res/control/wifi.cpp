@@ -1,5 +1,8 @@
 //wifi.cpp
 #include "wifi.h"
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QJsonDocument>
 
 Wifi::Wifi(QObject *parent)
     : QObject{parent},m_wifi_enabeled(false),m_password(""),m_ssid(""),m_busy(false),m_std_msg(""),m_err_msg("")
@@ -77,7 +80,11 @@ void Wifi::scan_wifi()
     }
 
 
-    QStringList args = {"-f", "IN-USE,SSID", "device", "wifi", "list"};
+    QStringList args = {
+        "-g", "SSID,SIGNAL,SECURITY,BSSID",
+        "device", "wifi", "list"
+    };
+
 
     m_wifi_process->setProcessChannelMode(QProcess::MergedChannels);
     m_wifi_process->setProperty("type",p_wifi_scan);
@@ -192,26 +199,50 @@ void Wifi::onReadyReadStdOut()
 
         break;
 
-    case p_wifi_scan:
+    case p_wifi_scan: {
+
         if (!lines.isEmpty() && lines.first().contains("IN-USE"))
             lines.removeFirst();
 
-        m_connected_ssid = "";
+        if (!lines.isEmpty() && lines.first().contains("SSID"))
+            lines.removeFirst();
+
+        m_connected_ssid.clear();
+        cleanList.clear();
+
+        QJsonArray wifiArray;
 
         for (QString line : lines) {
             line = line.trimmed();
+
             if (line.startsWith("*")) {
                 line = line.mid(1).trimmed();
-                m_connected_ssid = line;
+                m_connected_ssid = line.section(":", 0, 0);
             }
-            cleanList.append(line);
+
+            QString ssid  = line.section(":", 0, 0).trimmed();
+            QString pow   = line.section(":", 1, 1).trimmed();
+            QString enc   = line.section(":", 2, 2).trimmed();
+            QString bssid = line.section(":", 3, 3).trimmed();
+
+            cleanList.append(QString("%1 (%2%)").arg(ssid, pow));
+
+            QJsonObject obj;
+            obj["ssid"]  = ssid;
+            obj["pow"]   = pow;
+            obj["enc"]   = enc;
+            obj["bssid"] = bssid;
+            wifiArray.append(obj);
         }
 
-
         m_wifi_list->setStringList(cleanList);
+         QJsonDocument doc(wifiArray);
+        emit wifiScanReady("v1/devices/me/telemetry",QString::fromUtf8(doc.toJson(QJsonDocument::Compact)));
         emit connected_ssidChanged();
         emit command_out(output);
         break;
+    }
+
     case p_wifi_connect:
 
         m_std_msg=output;

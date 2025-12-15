@@ -16,14 +16,16 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     Wifi wifi_handel;
-    Bluetooth bluetooth;
+    //Bluetooth bluetooth;
     Mqttclient client;
 
+
+    QObject::connect(&wifi_handel, &Wifi::wifiScanReady,&client, &Mqttclient::publish_message, Qt::QueuedConnection);
 
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextProperty("wifi",&wifi_handel);
-    engine.rootContext()->setContextProperty("bluetooth",&bluetooth);
+    //engine.rootContext()->setContextProperty("bluetooth",&bluetooth);
     engine.rootContext()->setContextProperty("mqttClient", &client);
 
 

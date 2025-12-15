@@ -71,7 +71,7 @@ signals:
 
     void busyChanged();
 
-
+    void wifiScanReady(const QString &topic,const QString &json);
 
     void err_msgChanged();
 

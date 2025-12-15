@@ -40,7 +40,7 @@ Item{
             Button {
                 text: "Connect"
                 onClicked: {
-                    mqttClient.connectToBroker("ws://192.168.0.29:5050/mqtt", "K6mntxTf9qUxYeUlpQOH")
+                    mqttClient.connect_to_broker()
                 }
             }
 

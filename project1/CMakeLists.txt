@@ -24,6 +24,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(PahoMqttCpp REQUIRED)
 
 set(PROJECT_SOURCES
@@ -59,6 +60,8 @@ else()
 
           res/control/bluetooth.h res/control/bluetooth.cpp
           res/control/mqttclient.h res/control/mqttclient.cpp
+          res/control/mqttcallback.h res/control/mqttcallback.cpp
+
 
 
 
@@ -76,6 +79,7 @@ endif()
 target_link_libraries(project1
   PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick)
 target_link_libraries(project1 PRIVATE Qt5::Core)
+target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(project1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)

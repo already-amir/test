@@ -36,5 +36,12 @@
         <file>res/img/no_bluetooth.png</file>
         <file>res/Glob_var.qml</file>
         <file>res/setting/Bluetooth_panel.qml</file>
+        <file>res/control/bluetooth.cpp</file>
+        <file>res/control/bluetooth.h</file>
+        <file>res/control/config.json</file>
+        <file>res/control/mqttcallback.cpp</file>
+        <file>res/control/mqttcallback.h</file>
+        <file>res/control/mqttclient.cpp</file>
+        <file>res/control/mqttclient.h</file>
     </qresource>
 </RCC>
