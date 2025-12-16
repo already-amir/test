@@ -21,8 +21,6 @@
         <file>res/home/Cl2.qml</file>
         <file>res/home/Cl3.qml</file>
         <file>res/setting/Right_side.qml</file>
-        <file>res/control/wifi.cpp</file>
-        <file>res/control/wifi.h</file>
         <file>res/img/wifi_off.png</file>
         <file>res/img/wifi_on.png</file>
         <file>res/img/scan.png</file>
@@ -36,12 +34,14 @@
         <file>res/img/no_bluetooth.png</file>
         <file>res/Glob_var.qml</file>
         <file>res/setting/Bluetooth_panel.qml</file>
-        <file>res/control/bluetooth.cpp</file>
-        <file>res/control/bluetooth.h</file>
         <file>res/control/config.json</file>
-        <file>res/control/mqttcallback.cpp</file>
-        <file>res/control/mqttcallback.h</file>
-        <file>res/control/mqttclient.cpp</file>
-        <file>res/control/mqttclient.h</file>
+        <file>res/control/bluetooth/bluetooth.cpp</file>
+        <file>res/control/bluetooth/bluetooth.h</file>
+        <file>res/control/mqttcallback/mqttcallback.cpp</file>
+        <file>res/control/mqttcallback/mqttcallback.h</file>
+        <file>res/control/mqttclient/mqttclient.cpp</file>
+        <file>res/control/mqttclient/mqttclient.h</file>
+        <file>res/control/wifi/wifi.cpp</file>
+        <file>res/control/wifi/wifi.h</file>
     </qresource>
 </RCC>

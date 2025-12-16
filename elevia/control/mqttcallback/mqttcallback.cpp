@@ -1,5 +1,6 @@
 #include "mqttcallback.h"
-#include "mqttclient.h"
+#include "../mqttclient/mqttclient.h"
+
 #include <QMetaObject>
 
 Mqttcallback::Mqttcallback(Mqttclient *client) :m_client(client)

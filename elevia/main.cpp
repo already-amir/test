@@ -3,10 +3,11 @@
 #include <QQmlApplicationEngine>
 #include<QQmlContext>
 
-#include "res/control/wifi/wifi.h"
-#include "res/control/bluetooth/bluetooth.h"
+#include "control/wifi/wifi.h"
 
-#include "res/control/mqttclient/mqttclient.h"
+
+
+#include "control/mqttclient/mqttclient.h"
 
 int main(int argc, char *argv[])
 {
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     Wifi wifi_handel;
-    //Bluetooth bluetooth;
+
     Mqttclient client;
 
 
@@ -25,7 +26,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextProperty("wifi",&wifi_handel);
-    //engine.rootContext()->setContextProperty("bluetooth",&bluetooth);
+
     engine.rootContext()->setContextProperty("mqttClient", &client);
 
 
