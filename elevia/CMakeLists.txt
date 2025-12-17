@@ -12,11 +12,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
-find_package(PahoMqttCpp REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 set(PROJECT_SOURCES
-    main.cpp
-    qml.qrc
+        main.cpp
+        qml.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -33,36 +35,27 @@ else()
         add_library(elevia SHARED
             ${PROJECT_SOURCES}
         )
-    # Define properties for Android with Qt 5 after find_package() calls as:
-    #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
-else()
-    find_package(Qt5 REQUIRED COMPONENTS Core)
-    add_executable(elevia
-        ${PROJECT_SOURCES}
-        res/3d/P3d.qml res/boiler/Boiler.qml res/home/Cl1.qml res/home/Cl2.qml res/home/Cl3.qml res/home/Home.qml res/home/Left_side.qml res/home/Right_side.qml res/img/ab.jpg res/img/boiler.png res/img/grc.jpg res/img/home.png res/img/loading.gif res/img/P3d.png res/img/ping.png res/img/ross.png res/img/scan.png res/img/settings.png res/img/wifi_off.png res/img/wifi_on.png res/setting/Left_side.qml res/setting/Right_side.qml res/setting/Setting.qml res/setting/Wifi_Bottom.qml res/setting/Wifi_panel.qml res/setting/Wifi_Top.qml res/Glassy.qml res/Icon.qml res/Page_start.qml
-
-        control/wifi/wifi.h control/wifi/wifi.cpp
-        control/mqttclient/mqttclient.h control/mqttclient/mqttclient.cpp
-        control/mqttcallback/mqttcallback.h control/mqttcallback/mqttcallback.cpp
-
-
-
-    )
-endif()
+# Define properties for Android with Qt 5 after find_package() calls as:
+#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
+    else()
+        add_executable(elevia
+          ${PROJECT_SOURCES}
+        )
+    endif()
 endif()
 
 target_link_libraries(elevia
-    PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick)
-target_link_libraries(elevia PRIVATE Qt5::Core)
+  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick)
 target_link_libraries(elevia PRIVATE Qt${QT_VERSION_MAJOR}::Core)
-target_include_directories(${PROJECT_NAME} PRIVATE /usr/local/include)
-target_link_libraries(${PROJECT_NAME} PRIVATE PahoMqttCpp::paho-mqttpp3)
+target_link_libraries(elevia PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(elevia PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(elevia PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.elevia)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.elevia)
 endif()
 set_target_properties(elevia PROPERTIES
     ${BUNDLE_ID_OPTION}

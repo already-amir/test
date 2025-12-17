@@ -1,13 +1,5 @@
-//main.cpp
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include<QQmlContext>
-
-#include "control/wifi/wifi.h"
-
-
-
-#include "control/mqttclient/mqttclient.h"
 
 int main(int argc, char *argv[])
 {
@@ -16,20 +8,7 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
-    Wifi wifi_handel;
-
-    Mqttclient client;
-
-
-    QObject::connect(&wifi_handel, &Wifi::wifiScanReady,&client, &Mqttclient::publish_message, Qt::QueuedConnection);
-
     QQmlApplicationEngine engine;
-
-    engine.rootContext()->setContextProperty("wifi",&wifi_handel);
-
-    engine.rootContext()->setContextProperty("mqttClient", &client);
-
-
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(
         &engine,

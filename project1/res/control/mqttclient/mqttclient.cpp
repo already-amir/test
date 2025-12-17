@@ -2,7 +2,7 @@
 #include"../mqttcallback/mqttcallback.h"
 #include <QDebug>
 Mqttclient::Mqttclient(QObject *parent)
-    : QObject{parent},m_host("192.168.0.29:5050"),m_token("K6mntxTf9qUxYeUlpQOH")
+    : QObject{parent}
 {
     m_reconnect_timer.setInterval(1000);
     connect(&m_reconnect_timer, &QTimer::timeout,

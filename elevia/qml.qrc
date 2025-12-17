@@ -1,45 +1,12 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>control/mqttcallback/mqttcallback.cpp</file>
-        <file>control/mqttcallback/mqttcallback.h</file>
-        <file>control/mqttclient/mqttclient.cpp</file>
-        <file>control/mqttclient/mqttclient.h</file>
-        <file>control/wifi/wifi.cpp</file>
-        <file>control/wifi/wifi.h</file>
         <file>control/config.json</file>
-        <file>res/3d/P3d.qml</file>
-        <file>res/boiler/Boiler.qml</file>
-        <file>res/home/Cl1.qml</file>
-        <file>res/home/Cl2.qml</file>
-        <file>res/home/Cl3.qml</file>
-        <file>res/home/Home.qml</file>
-        <file>res/home/Left_side.qml</file>
-        <file>res/home/Right_side.qml</file>
-        <file>res/img/ab.jpg</file>
-        <file>res/img/bluetooth.png</file>
-        <file>res/img/boiler.png</file>
-        <file>res/img/grc.jpg</file>
-        <file>res/img/home.png</file>
-        <file>res/img/loading.gif</file>
-        <file>res/img/no_bluetooth.png</file>
-        <file>res/img/P3d.png</file>
-        <file>res/img/ping.png</file>
-        <file>res/img/ross.png</file>
-        <file>res/img/scan.png</file>
-        <file>res/img/settings.png</file>
-        <file>res/img/wifi_off.png</file>
-        <file>res/img/wifi_on.png</file>
-        <file>res/setting/Bluetooth_panel.qml</file>
-        <file>res/setting/Left_side.qml</file>
-        <file>res/setting/Right_side.qml</file>
-        <file>res/setting/Setting.qml</file>
-        <file>res/setting/Wifi_Bottom.qml</file>
-        <file>res/setting/Wifi_panel.qml</file>
-        <file>res/setting/Wifi_Top.qml</file>
-        <file>res/Glassy.qml</file>
-        <file>res/Glob_var.qml</file>
-        <file>res/Icon.qml</file>
-        <file>res/Page_start.qml</file>
+        <file>control/wifi/wifi.h</file>
+        <file>control/wifi/wifi.cpp</file>
+        <file>control/mqtt/mqtt.h</file>
+        <file>control/mqtt/mqtt.cpp</file>
+        <file>control/app.h</file>
+        <file>control/app.cpp</file>
     </qresource>
 </RCC>
