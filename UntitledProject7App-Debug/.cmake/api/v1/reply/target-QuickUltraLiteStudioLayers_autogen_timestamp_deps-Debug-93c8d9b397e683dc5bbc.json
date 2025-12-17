@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Dependencies/Components/imports/compat/Layers/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "QuickUltraLiteStudioLayers_tooling::@9cea06909fd7c65dc0a4"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "QuickUltraLiteStudioLayers_autogen_timestamp_deps::@9cea06909fd7c65dc0a4",
+	"isGeneratorProvided" : true,
+	"name" : "QuickUltraLiteStudioLayers_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Dependencies/Components/imports/compat/Layers",
+		"source" : "Dependencies/Components/imports/compat/Layers"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

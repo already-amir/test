@@ -1,0 +1,31 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"UntitledProject7Content/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "UntitledProject7Content_resources_2_autogen_timestamp_deps::@868a2a35cf85856e297c",
+	"isGeneratorProvided" : true,
+	"name" : "UntitledProject7Content_resources_2_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "UntitledProject7Content",
+		"source" : "UntitledProject7Content"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

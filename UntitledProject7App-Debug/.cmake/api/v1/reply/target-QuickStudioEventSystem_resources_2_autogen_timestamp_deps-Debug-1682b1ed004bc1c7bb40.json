@@ -1,0 +1,31 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Dependencies/Components/imports/tools/eventsystem/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "QuickStudioEventSystem_resources_2_autogen_timestamp_deps::@7313da5ee4978bca808b",
+	"isGeneratorProvided" : true,
+	"name" : "QuickStudioEventSystem_resources_2_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Dependencies/Components/imports/tools/eventsystem",
+		"source" : "Dependencies/Components/imports/tools/eventsystem"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

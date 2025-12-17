@@ -1,0 +1,31 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Dependencies/Components/imports/application/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "QuickStudioApplication_autogen_timestamp_deps::@96628f3d7b199c5571df",
+	"isGeneratorProvided" : true,
+	"name" : "QuickStudioApplication_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Dependencies/Components/imports/application",
+		"source" : "Dependencies/Components/imports/application"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

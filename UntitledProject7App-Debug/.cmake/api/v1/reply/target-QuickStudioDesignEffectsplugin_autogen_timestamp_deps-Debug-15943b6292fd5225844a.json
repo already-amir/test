@@ -1,0 +1,31 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Dependencies/Components/imports/designeffects/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "QuickStudioDesignEffectsplugin_autogen_timestamp_deps::@30d88e5628b3a63ca79b",
+	"isGeneratorProvided" : true,
+	"name" : "QuickStudioDesignEffectsplugin_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Dependencies/Components/imports/designeffects",
+		"source" : "Dependencies/Components/imports/designeffects"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

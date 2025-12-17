@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Dependencies/Components/imports/compat/Profiling/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "QuickUltraLiteStudioProfiling_tooling::@18181dfaa655dadd9acd"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "QuickUltraLiteStudioProfiling_autogen_timestamp_deps::@18181dfaa655dadd9acd",
+	"isGeneratorProvided" : true,
+	"name" : "QuickUltraLiteStudioProfiling_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Dependencies/Components/imports/compat/Profiling",
+		"source" : "Dependencies/Components/imports/compat/Profiling"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

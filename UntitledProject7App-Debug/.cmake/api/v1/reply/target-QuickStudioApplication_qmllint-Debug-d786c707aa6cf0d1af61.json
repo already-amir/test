@@ -1,0 +1,98 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_target_enable_qmllint",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module"
+		],
+		"files" : 
+		[
+			"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"Dependencies/Components/imports/application/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1843,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 824,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "all_qmltyperegistrations::@6a9173533480e2c36f80"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QmlLinter"
+	},
+	"id" : "QuickStudioApplication_qmllint::@96628f3d7b199c5571df",
+	"name" : "QuickStudioApplication_qmllint",
+	"paths" : 
+	{
+		"build" : "Dependencies/Components/imports/application",
+		"source" : "Dependencies/Components/imports/application"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "C:/Users/a.sadeghi/Desktop/test/UntitledProject7App-Debug/Dependencies/Components/imports/application/CMakeFiles/QuickStudioApplication_qmllint",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/a.sadeghi/Desktop/test/UntitledProject7App-Debug/Dependencies/Components/imports/application/CMakeFiles/QuickStudioApplication_qmllint.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

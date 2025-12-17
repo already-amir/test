@@ -1,0 +1,10 @@
+module UntitledProject7
+linktarget UntitledProject7plugin
+optional plugin UntitledProject7plugin
+classname UntitledProject7Plugin
+typeinfo UntitledProject7.qmltypes
+prefer :/qt/qml/UntitledProject7/
+singleton Constants 1.0 Constants.qml
+EventListModel 1.0 EventListModel.qml
+EventListSimulator 1.0 EventListSimulator.qml
+
