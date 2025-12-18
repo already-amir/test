@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt-project.org/imports/QtQuickUltralite/Profiling/">
+    <file alias="QulPerfOverlay.qml">/home/amir/Desktop/test/Elevia_app/Dependencies/Components/imports/compat/Profiling/QulPerfOverlay.qml</file>
+  </qresource>
+</RCC>
+

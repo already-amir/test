@@ -1,0 +1,75 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Elevia_appContent/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "Elevia_appContent_resources_2_autogen_timestamp_deps::@5e4765dbb4e638718d78"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Elevia_appContent_resources_2_autogen::@5e4765dbb4e638718d78",
+	"isGeneratorProvided" : true,
+	"name" : "Elevia_appContent_resources_2_autogen",
+	"paths" : 
+	{
+		"build" : "Elevia_appContent",
+		"source" : "Elevia_appContent"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Elevia_appContent/CMakeFiles/Elevia_appContent_resources_2_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Elevia_appContent/CMakeFiles/Elevia_appContent_resources_2_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Elevia_appContent/Elevia_appContent_resources_2_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

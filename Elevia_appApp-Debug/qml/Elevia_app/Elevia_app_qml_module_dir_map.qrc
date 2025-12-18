@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/Elevia_app">/home/amir/Desktop/test/Elevia_appApp-Debug/qml/Elevia_app</file>
+
+  </qresource>
+</RCC>

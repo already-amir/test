@@ -1,0 +1,62 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Elevia_app/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Elevia_appplugin_init_autogen_timestamp_deps::@b3ce396bc62b0125a6d1",
+	"isGeneratorProvided" : true,
+	"name" : "Elevia_appplugin_init_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Elevia_app",
+		"source" : "Elevia_app"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Elevia_app/CMakeFiles/Elevia_appplugin_init_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Elevia_app/CMakeFiles/Elevia_appplugin_init_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

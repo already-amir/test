@@ -1,0 +1,848 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "Dependencies/Components/imports/components/libQuickStudioComponents.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"target_link_libraries",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"Dependencies/Components/imports/components/CMakeLists.txt",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:679:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2325,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2229,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2303,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 2289,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 369,
+				"parent" : 5
+			},
+			{
+				"command" : 9,
+				"file" : 2,
+				"line" : 517,
+				"parent" : 5
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 2620,
+				"parent" : 9
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2425,
+				"parent" : 9
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 1136,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2586,
+				"parent" : 9
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 6
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 13,
+				"file" : 3,
+				"line" : 1,
+				"parent" : 42
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 704,
+				"parent" : 43
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 1792,
+				"parent" : 44
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components"
+				},
+				{
+					"path" : "/home/amir/Desktop/test/Elevia_app/Dependencies/Components/imports/components"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/QuickStudioComponents_autogen/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQml/6.5.3"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQml/6.5.3/QtQml"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtCore/6.5.3"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtCore/6.5.3/QtCore"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtCore"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQml"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "QuickStudioComponents_tooling::@749c3276d580d9ca25a1"
+		},
+		{
+			"id" : "QuickStudioComponents_autogen_timestamp_deps::@749c3276d580d9ca25a1"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioComponents_autogen::@749c3276d580d9ca25a1"
+		}
+	],
+	"id" : "QuickStudioComponents::@749c3276d580d9ca25a1",
+	"name" : "QuickStudioComponents",
+	"nameOnDisk" : "libQuickStudioComponents.a",
+	"paths" : 
+	{
+		"build" : "Dependencies/Components/imports/components",
+		"source" : "Dependencies/Components/imports/components"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				32,
+				51,
+				52,
+				53
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/QuickStudioComponents_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/meta_types/qt6quickstudiocomponents_debug_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/quickstudiocomponents_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"path" : "Dependencies/Components/imports/components/ArcArrow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 15,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_ArcArrow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Dependencies/Components/imports/components/ArcItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 17,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_ArcItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 18,
+			"path" : "Dependencies/Components/imports/components/BorderItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 19,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_BorderItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"path" : "Dependencies/Components/imports/components/EllipseItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 21,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_EllipseItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 22,
+			"path" : "Dependencies/Components/imports/components/FlipableItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 23,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_FlipableItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"path" : "Dependencies/Components/imports/components/GroupItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_GroupItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"path" : "Dependencies/Components/imports/components/PieItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 27,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_PieItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 28,
+			"path" : "Dependencies/Components/imports/components/RectangleItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_RectangleItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 30,
+			"path" : "Dependencies/Components/imports/components/RegularPolygonItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 31,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_RegularPolygonItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 32,
+			"path" : "Dependencies/Components/imports/components/StarItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_StarItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 34,
+			"path" : "Dependencies/Components/imports/components/StraightArrow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 35,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_StraightArrow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 36,
+			"path" : "Dependencies/Components/imports/components/SvgPathItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 37,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_SvgPathItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 38,
+			"path" : "Dependencies/Components/imports/components/TextItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 39,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_TextItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 40,
+			"path" : "Dependencies/Components/imports/components/TriangleItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 41,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_TriangleItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 45,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/qml/QtQuick/Studio/Components/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/QuickStudioComponents_autogen/timestamp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/meta_types/qt6quickstudiocomponents_debug_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/quickstudiocomponents_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_ArcArrow_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_ArcItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_BorderItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_EllipseItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_FlipableItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_GroupItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_PieItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_RectangleItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_RegularPolygonItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_StarItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_StraightArrow_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_SvgPathItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_TextItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/.rcc/qmlcache/QuickStudioComponents_TriangleItem_qml.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/QuickStudioComponents_autogen/timestamp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/components/meta_types/QuickStudioComponents_json_file_list.txt.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 8,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 8,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 8,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

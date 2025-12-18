@@ -1,0 +1,395 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_target_enable_qmllint",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"Elevia_app/CMakeLists.txt",
+			"Elevia_appContent/CMakeLists.txt",
+			"Dependencies/Components/imports/application/CMakeLists.txt",
+			"Dependencies/Components/imports/compat/Components/CMakeLists.txt",
+			"Dependencies/Components/imports/compat/Extras/CMakeLists.txt",
+			"Dependencies/Components/imports/compat/Layers/CMakeLists.txt",
+			"Dependencies/Components/imports/compat/Profiling/CMakeLists.txt",
+			"Dependencies/Components/imports/components/CMakeLists.txt",
+			"Dependencies/Components/imports/designeffects/CMakeLists.txt",
+			"Dependencies/Components/imports/logichelper/CMakeLists.txt",
+			"Dependencies/Components/imports/utils/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 894,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 3
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 7,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 9
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2,
+				"parent" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 12
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1843,
+				"parent" : 13
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 14
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 2,
+				"parent" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 17
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 18
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 19
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 7,
+				"parent" : 21
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 22
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 23
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 24
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 2,
+				"parent" : 26
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 27
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 28
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 29
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 7,
+				"line" : 2,
+				"parent" : 31
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 32
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 33
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 34
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 8,
+				"line" : 2,
+				"parent" : 36
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 37
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 38
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 39
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 2,
+				"parent" : 41
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 42
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 43
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 44
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 2,
+				"parent" : 46
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 47
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 48
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 49
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 2,
+				"parent" : 51
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 610,
+				"parent" : 52
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2090,
+				"parent" : 53
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 897,
+				"parent" : 54
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "Elevia_app_qmllint_module::@b3ce396bc62b0125a6d1"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "Elevia_appContent_qmllint_module::@5e4765dbb4e638718d78"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "QuickStudioApplication_qmllint_module::@96628f3d7b199c5571df"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "QuickUltraLiteStudioComponents_qmllint_module::@0526ae300ede523a7852"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "QuickUltraLiteStudioExtras_qmllint_module::@e60e1ef64563e370001a"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "QuickUltraLiteStudioLayers_qmllint_module::@9cea06909fd7c65dc0a4"
+		},
+		{
+			"backtrace" : 35,
+			"id" : "QuickUltraLiteStudioProfiling_qmllint_module::@18181dfaa655dadd9acd"
+		},
+		{
+			"backtrace" : 40,
+			"id" : "QuickStudioComponents_qmllint_module::@749c3276d580d9ca25a1"
+		},
+		{
+			"backtrace" : 45,
+			"id" : "QuickStudioDesignEffects_qmllint_module::@30d88e5628b3a63ca79b"
+		},
+		{
+			"backtrace" : 50,
+			"id" : "QuickStudioLogicHelper_qmllint_module::@79eb3f839f3a7e042382"
+		},
+		{
+			"backtrace" : 55,
+			"id" : "QuickStudioUtils_qmllint_module::@8ff510d3f555da08768e"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QmlLinter"
+	},
+	"id" : "all_qmllint_module::@b3ce396bc62b0125a6d1",
+	"name" : "all_qmllint_module",
+	"paths" : 
+	{
+		"build" : "Elevia_app",
+		"source" : "Elevia_app"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

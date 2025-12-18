@@ -1,0 +1,69 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Dependencies/Components/imports/compat/Components/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "QuickUltraLiteStudioComponents_qmlcache_autogen_timestamp_deps::@0526ae300ede523a7852",
+	"isGeneratorProvided" : true,
+	"name" : "QuickUltraLiteStudioComponents_qmlcache_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Dependencies/Components/imports/compat/Components",
+		"source" : "Dependencies/Components/imports/compat/Components"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/compat/Components/CMakeFiles/QuickUltraLiteStudioComponents_qmlcache_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/compat/Components/CMakeFiles/QuickUltraLiteStudioComponents_qmlcache_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/compat/Components/.rcc/qmlcache/QuickUltraLiteStudioComponents_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

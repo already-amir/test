@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/UntitledProject7/">
-    <file alias="Constants.qml">C:/Users/a.sadeghi/Desktop/test/UntitledProject7/UntitledProject7/Constants.qml</file>
-    <file alias="EventListModel.qml">C:/Users/a.sadeghi/Desktop/test/UntitledProject7/UntitledProject7/EventListModel.qml</file>
-    <file alias="EventListSimulator.qml">C:/Users/a.sadeghi/Desktop/test/UntitledProject7/UntitledProject7/EventListSimulator.qml</file>
-  </qresource>
-</RCC>
-
