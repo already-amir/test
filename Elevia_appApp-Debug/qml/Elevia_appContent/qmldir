@@ -1,9 +1,0 @@
-module Elevia_appContent
-linktarget Elevia_appContentplugin
-optional plugin Elevia_appContentplugin
-classname Elevia_appContentPlugin
-typeinfo Elevia_appContent.qmltypes
-prefer :/qt/qml/Elevia_appContent/
-App 1.0 App.qml
-Screen01 1.0 Screen01.ui.qml
-

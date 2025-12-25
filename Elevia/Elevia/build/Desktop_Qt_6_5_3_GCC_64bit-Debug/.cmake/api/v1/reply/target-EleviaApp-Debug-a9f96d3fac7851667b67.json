@@ -1,0 +1,3168 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "EleviaApp"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"install",
+			"target_link_libraries",
+			"__qt_internal_propagate_object_files",
+			"__qt_internal_propagate_object_library",
+			"qt6_add_qml_module",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_propagate_qmlcache_object_lib",
+			"_qt_internal_target_enable_qmlcachegen",
+			"qt6_target_qml_sources",
+			"include",
+			"set_target_properties",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
+			"qt6_add_qml_plugin",
+			"_qt_internal_find_third_party_dependencies",
+			"add_dependencies",
+			"_qt_internal_scan_qml_imports",
+			"_qt_internal_generate_deploy_qml_imports_script",
+			"cmake_language",
+			"_qt_internal_finalize_executable",
+			"qt6_finalize_target",
+			"target_compile_definitions",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt_add_resources",
+			"qt6_extract_metatypes",
+			"_qt_internal_expose_deferred_files_to_ide"
+		],
+		"files" : 
+		[
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/_deps/ds-src/src/imports/components/CMakeLists.txt",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/_deps/ds-src/src/imports/effects_qt6/CMakeLists.txt",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/_deps/ds-src/src/imports/application/CMakeLists.txt",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/_deps/ds-src/src/imports/flowview/CMakeLists.txt",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/_deps/ds-src/src/imports/logichelper/CMakeLists.txt",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/_deps/ds-src/src/imports/multitext/CMakeLists.txt",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/_deps/ds-src/src/imports/tools/eventsimulator/CMakeLists.txt",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/_deps/ds-src/src/imports/tools/eventsystem/CMakeLists.txt",
+			"content/CMakeLists.txt",
+			"imports/Elevia/CMakeLists.txt",
+			"qmlcomponents",
+			"qmlmodules",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake",
+			"build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake",
+			"/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6/FindWrapOpenGL.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Qml/Qt6QmlDependencies.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+			"/home/amir/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:679:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 741,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 549,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 588,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 9
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 2,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 14
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 6,
+				"parent" : 16
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 18
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 19
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 6,
+				"parent" : 21
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 22
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 23
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 24
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 2,
+				"parent" : 26
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 28
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 29
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 2,
+				"parent" : 31
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 33
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 34
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 9,
+				"line" : 6,
+				"parent" : 36
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 37
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 38
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 39
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 8,
+				"file" : 10,
+				"line" : 7,
+				"parent" : 41
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 42
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 43
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 44
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 11,
+				"line" : 7,
+				"parent" : 46
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 47
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 48
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 49
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 8,
+				"file" : 12,
+				"line" : 12,
+				"parent" : 51
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 631,
+				"parent" : 52
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 53
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 54
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 7
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 56
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 57
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 58
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 59
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 60
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 7
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 62
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 63
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 64
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 65
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 66
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 62
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 68
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 69
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 70
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 71
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 12
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 74
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 75
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 76
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 77
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 78
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 12
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 80
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 81
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 82
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 83
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 84
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 80
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 86
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 87
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 88
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 89
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 90
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 17
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 92
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 93
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 94
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 95
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 96
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 22
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 98
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 99
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 100
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 101
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 102
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 98
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 104
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 105
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 106
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 107
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 108
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 27
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 110
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 111
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 112
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 113
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 114
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 27
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 116
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 117
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 118
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 119
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 120
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 116
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 122
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 123
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 124
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 125
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 126
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 32
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 128
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 129
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 130
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 131
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 132
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 32
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 134
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 135
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 136
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 137
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 138
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 134
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 140
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 141
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 142
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 143
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 144
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 37
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 146
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 147
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 148
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 149
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 150
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 37
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 152
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 153
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 154
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 155
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 156
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 152
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 158
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 159
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 160
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 161
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 162
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 42
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 164
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 165
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 166
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 167
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 168
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 42
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 170
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 171
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 172
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 173
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 174
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 170
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 176
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 177
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 178
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 179
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 180
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 47
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 182
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 183
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 184
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 185
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 186
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 47
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 188
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 189
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 190
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 191
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 192
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 188
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 194
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 195
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 196
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 197
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 198
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 52
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 200
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 201
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 202
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 203
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 204
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 52
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 206
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 1030,
+				"parent" : 207
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 943,
+				"parent" : 208
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 209
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 210
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 206
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 212
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 213
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1701,
+				"parent" : 214
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1646,
+				"parent" : 215
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1594,
+				"parent" : 216
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 15,
+				"file" : 1,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"file" : 13,
+				"parent" : 220
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 18,
+				"parent" : 221
+			},
+			{
+				"command" : 15,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"file" : 14,
+				"parent" : 223
+			},
+			{
+				"command" : 5,
+				"file" : 14,
+				"line" : 16,
+				"parent" : 224
+			},
+			{
+				"command" : 17,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 17,
+				"file" : 17,
+				"line" : 315,
+				"parent" : 226
+			},
+			{
+				"file" : 16,
+				"parent" : 227
+			},
+			{
+				"command" : 15,
+				"file" : 16,
+				"line" : 52,
+				"parent" : 228
+			},
+			{
+				"file" : 15,
+				"parent" : 229
+			},
+			{
+				"command" : 16,
+				"file" : 15,
+				"line" : 61,
+				"parent" : 230
+			},
+			{
+				"command" : 15,
+				"file" : 16,
+				"line" : 40,
+				"parent" : 228
+			},
+			{
+				"file" : 22,
+				"parent" : 232
+			},
+			{
+				"command" : 19,
+				"file" : 22,
+				"line" : 39,
+				"parent" : 233
+			},
+			{
+				"command" : 18,
+				"file" : 21,
+				"line" : 111,
+				"parent" : 234
+			},
+			{
+				"command" : 17,
+				"file" : 20,
+				"line" : 76,
+				"parent" : 235
+			},
+			{
+				"command" : 17,
+				"file" : 17,
+				"line" : 333,
+				"parent" : 236
+			},
+			{
+				"file" : 19,
+				"parent" : 237
+			},
+			{
+				"command" : 15,
+				"file" : 19,
+				"line" : 55,
+				"parent" : 238
+			},
+			{
+				"file" : 18,
+				"parent" : 239
+			},
+			{
+				"command" : 16,
+				"file" : 18,
+				"line" : 61,
+				"parent" : 240
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 242
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 244
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 246
+			},
+			{
+				"command" : 18,
+				"file" : 21,
+				"line" : 111,
+				"parent" : 234
+			},
+			{
+				"command" : 17,
+				"file" : 20,
+				"line" : 76,
+				"parent" : 248
+			},
+			{
+				"command" : 17,
+				"file" : 17,
+				"line" : 333,
+				"parent" : 249
+			},
+			{
+				"file" : 25,
+				"parent" : 250
+			},
+			{
+				"command" : 15,
+				"file" : 25,
+				"line" : 40,
+				"parent" : 251
+			},
+			{
+				"file" : 24,
+				"parent" : 252
+			},
+			{
+				"command" : 21,
+				"file" : 24,
+				"line" : 30,
+				"parent" : 253
+			},
+			{
+				"command" : 18,
+				"file" : 21,
+				"line" : 36,
+				"parent" : 254
+			},
+			{
+				"command" : 17,
+				"file" : 20,
+				"line" : 76,
+				"parent" : 255
+			},
+			{
+				"command" : 17,
+				"file" : 17,
+				"line" : 340,
+				"parent" : 256
+			},
+			{
+				"file" : 23,
+				"parent" : 257
+			},
+			{
+				"command" : 5,
+				"file" : 23,
+				"line" : 51,
+				"parent" : 258
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 22
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 260
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 27
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 262
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 32
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 264
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 37
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 266
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 42
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 268
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 47
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 270
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 588,
+				"parent" : 52
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1786,
+				"parent" : 272
+			},
+			{
+				"command" : 17,
+				"file" : 17,
+				"line" : 315,
+				"parent" : 226
+			},
+			{
+				"file" : 29,
+				"parent" : 274
+			},
+			{
+				"command" : 15,
+				"file" : 29,
+				"line" : 41,
+				"parent" : 275
+			},
+			{
+				"file" : 28,
+				"parent" : 276
+			},
+			{
+				"command" : 19,
+				"file" : 28,
+				"line" : 39,
+				"parent" : 277
+			},
+			{
+				"command" : 18,
+				"file" : 21,
+				"line" : 111,
+				"parent" : 278
+			},
+			{
+				"command" : 17,
+				"file" : 20,
+				"line" : 76,
+				"parent" : 279
+			},
+			{
+				"command" : 17,
+				"file" : 17,
+				"line" : 333,
+				"parent" : 280
+			},
+			{
+				"file" : 27,
+				"parent" : 281
+			},
+			{
+				"command" : 15,
+				"file" : 27,
+				"line" : 55,
+				"parent" : 282
+			},
+			{
+				"file" : 26,
+				"parent" : 283
+			},
+			{
+				"command" : 16,
+				"file" : 26,
+				"line" : 61,
+				"parent" : 284
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 550,
+				"parent" : 2
+			},
+			{
+				"command" : 8,
+				"file" : 14,
+				"line" : 4,
+				"parent" : 224
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 610,
+				"parent" : 287
+			},
+			{
+				"command" : 22,
+				"file" : 2,
+				"line" : 2289,
+				"parent" : 288
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 27,
+				"file" : 30,
+				"line" : 1,
+				"parent" : 290
+			},
+			{
+				"command" : 26,
+				"file" : 0,
+				"line" : 709,
+				"parent" : 291
+			},
+			{
+				"command" : 25,
+				"file" : 0,
+				"line" : 636,
+				"parent" : 292
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 636,
+				"parent" : 293
+			},
+			{
+				"command" : 23,
+				"file" : 2,
+				"line" : 2965,
+				"parent" : 294
+			},
+			{
+				"command" : 22,
+				"file" : 2,
+				"line" : 2817,
+				"parent" : 295
+			},
+			{
+				"command" : 28,
+				"file" : 13,
+				"line" : 31,
+				"parent" : 221
+			},
+			{
+				"command" : 30,
+				"file" : 2,
+				"line" : 517,
+				"parent" : 287
+			},
+			{
+				"command" : 29,
+				"file" : 2,
+				"line" : 2620,
+				"parent" : 298
+			},
+			{
+				"command" : 32,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 366,
+				"parent" : 300
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 301
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 302
+			},
+			{
+				"command" : 31,
+				"file" : 0,
+				"line" : 1708,
+				"parent" : 303
+			},
+			{
+				"command" : 33,
+				"file" : 2,
+				"line" : 2425,
+				"parent" : 298
+			},
+			{
+				"command" : 31,
+				"file" : 0,
+				"line" : 1136,
+				"parent" : 305
+			},
+			{
+				"command" : 31,
+				"file" : 2,
+				"line" : 2586,
+				"parent" : 298
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 561,
+				"parent" : 287
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 308
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 309
+			},
+			{
+				"command" : 31,
+				"file" : 0,
+				"line" : 1708,
+				"parent" : 310
+			},
+			{
+				"command" : 31,
+				"file" : 2,
+				"line" : 2072,
+				"parent" : 288
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 2176,
+				"parent" : 288
+			},
+			{
+				"command" : 31,
+				"file" : 2,
+				"line" : 1038,
+				"parent" : 313
+			},
+			{
+				"command" : 31,
+				"file" : 2,
+				"line" : 2225,
+				"parent" : 288
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2308,
+				"parent" : 288
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 316
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2055,
+				"parent" : 317
+			},
+			{
+				"command" : 31,
+				"file" : 0,
+				"line" : 1708,
+				"parent" : 318
+			},
+			{
+				"command" : 34,
+				"file" : 0,
+				"line" : 704,
+				"parent" : 291
+			},
+			{
+				"command" : 31,
+				"file" : 0,
+				"line" : 1792,
+				"parent" : 320
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 286,
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 297,
+					"define" : "BULD_QDS_COMPONENTS=true"
+				},
+				{
+					"backtrace" : 286,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 218,
+					"define" : "QT_DBUS_LIB"
+				},
+				{
+					"backtrace" : 219,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 219,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 219,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 219,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 219,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 219,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 219,
+					"define" : "QT_QUICK_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug"
+				},
+				{
+					"path" : "/home/amir/Desktop/Elevia/Elevia"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/EleviaApp_autogen/include"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQml/6.5.3"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQml/6.5.3/QtQml"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtCore/6.5.3"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtCore/6.5.3/QtCore"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtCore"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQml"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 299,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 218,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtDBus"
+				},
+				{
+					"backtrace" : 219,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtGui"
+				},
+				{
+					"backtrace" : 219,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQuick"
+				},
+				{
+					"backtrace" : 219,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 219,
+					"isSystem" : true,
+					"path" : "/home/amir/Qt/6.5.3/gcc_64/include/QtOpenGL"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				4,
+				6,
+				7,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 289,
+			"id" : "EleviaApp_tooling::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 296,
+			"id" : "EleviaApp_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioComponents::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioComponents_resources_1::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioComponentsplugin::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioComponents_qmlcache::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioComponents_resources_2::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioComponentsplugin_init::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEffects::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEffects_resources_1::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEffectsplugin::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEffects_qmlcache::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEffects_resources_2::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEffectsplugin_init::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "FlowView::@f99fd1e4b9fa497fd232"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "FlowViewplugin::@f99fd1e4b9fa497fd232"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "FlowView_qmlcache::@f99fd1e4b9fa497fd232"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "FlowView_resources_1::@f99fd1e4b9fa497fd232"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "FlowViewplugin_init::@f99fd1e4b9fa497fd232"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioLogicHelper::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioLogicHelper_resources_1::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioLogicHelperplugin::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioLogicHelper_qmlcache::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioLogicHelper_resources_2::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioLogicHelperplugin_init::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioMultiText::@a7b8d61f767e497853c2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioMultiText_resources_1::@a7b8d61f767e497853c2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioMultiTextplugin::@a7b8d61f767e497853c2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioMultiText_qmlcache::@a7b8d61f767e497853c2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioMultiText_resources_2::@a7b8d61f767e497853c2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioMultiTextplugin_init::@a7b8d61f767e497853c2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSimulator::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSimulator_resources_1::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSimulatorplugin::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSimulator_qmlcache::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSimulator_resources_2::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSimulatorplugin_init::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSystem::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSystem_resources_1::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSystemplugin::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSystem_qmlcache::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSystem_resources_2::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioEventSystemplugin_init::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioApplication::@a324641c06033e250fc2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioApplication_resources_1::@a324641c06033e250fc2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioApplicationplugin::@a324641c06033e250fc2"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "QuickStudioApplicationplugin_init::@a324641c06033e250fc2"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "content::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "content_resources_1::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "contentplugin::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "content_qmlcache::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "content_resources_2::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "contentplugin_init::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "Elevia::@3fbb209c84999df0ce1b"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "Elevia_resources_1::@3fbb209c84999df0ce1b"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "Eleviaplugin::@3fbb209c84999df0ce1b"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "Elevia_qmlcache::@3fbb209c84999df0ce1b"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "Elevia_resources_2::@3fbb209c84999df0ce1b"
+		},
+		{
+			"backtrace" : 225,
+			"id" : "Eleviaplugin_init::@3fbb209c84999df0ce1b"
+		},
+		{
+			"id" : "EleviaApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "EleviaApp_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "EleviaApp::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/amir/Qt/6.5.3/gcc_64"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-DQT_QML_DEBUG -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/amir/Qt/6.5.3/gcc_64/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "_deps/ds-build/src/imports/components/CMakeFiles/QuickStudioComponentsplugin_init.dir/./QuickStudioComponentsplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "_deps/ds-build/src/imports/components/CMakeFiles/QuickStudioComponentsplugin_init.dir/./QuickStudioComponentsplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffectsplugin_init.dir/./QuickStudioEffectsplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffectsplugin_init.dir/./QuickStudioEffectsplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "_deps/ds-build/src/imports/application/CMakeFiles/QuickStudioApplicationplugin_init.dir/./QuickStudioApplicationplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "_deps/ds-build/src/imports/application/CMakeFiles/QuickStudioApplicationplugin_init.dir/./QuickStudioApplicationplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "_deps/ds-build/src/imports/flowview/CMakeFiles/FlowViewplugin_init.dir/./FlowViewplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "_deps/ds-build/src/imports/flowview/CMakeFiles/FlowViewplugin_init.dir/./FlowViewplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelperplugin_init.dir/./QuickStudioLogicHelperplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelperplugin_init.dir/./QuickStudioLogicHelperplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init.dir/./QuickStudioMultiTextplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init.dir/./QuickStudioMultiTextplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulatorplugin_init.dir/./QuickStudioEventSimulatorplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulatorplugin_init.dir/./QuickStudioEventSimulatorplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/CMakeFiles/QuickStudioEventSystemplugin_init.dir/./QuickStudioEventSystemplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/CMakeFiles/QuickStudioEventSystemplugin_init.dir/./QuickStudioEventSystemplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 50,
+				"fragment" : "content/CMakeFiles/contentplugin_init.dir/./contentplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 50,
+				"fragment" : "content/CMakeFiles/contentplugin_init.dir/./contentplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 55,
+				"fragment" : "imports/Elevia/CMakeFiles/Eleviaplugin_init.dir/./Eleviaplugin_init_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 55,
+				"fragment" : "imports/Elevia/CMakeFiles/Eleviaplugin_init.dir/./Eleviaplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 61,
+				"fragment" : "_deps/ds-build/src/imports/components/CMakeFiles/QuickStudioComponents_resources_1.dir/./QuickStudioComponents_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 61,
+				"fragment" : "_deps/ds-build/src/imports/components/CMakeFiles/QuickStudioComponents_resources_1.dir/./.rcc/qrc_qmake_QtQuick_Studio_Components.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 67,
+				"fragment" : "_deps/ds-build/src/imports/components/CMakeFiles/QuickStudioComponents_qmlcache.dir/./QuickStudioComponents_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 67,
+				"fragment" : "_deps/ds-build/src/imports/components/CMakeFiles/QuickStudioComponents_qmlcache.dir/./.rcc/qmlcache/QuickStudioComponents_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "_deps/ds-build/src/imports/components/CMakeFiles/QuickStudioComponents_resources_2.dir/./QuickStudioComponents_resources_2_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "_deps/ds-build/src/imports/components/CMakeFiles/QuickStudioComponents_resources_2.dir/./.rcc/qrc_QuickStudioComponents_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 79,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffects_resources_1.dir/./QuickStudioEffects_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 79,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffects_resources_1.dir/./.rcc/qrc_qmake_QtQuick_Studio_Effects.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 85,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffects_qmlcache.dir/./QuickStudioEffects_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 85,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffects_qmlcache.dir/./.rcc/qmlcache/QuickStudioEffects_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 91,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffects_resources_2.dir/./QuickStudioEffects_resources_2_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 91,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffects_resources_2.dir/./.rcc/qrc_QuickStudioEffects_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 97,
+				"fragment" : "_deps/ds-build/src/imports/application/CMakeFiles/QuickStudioApplication_resources_1.dir/./QuickStudioApplication_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 97,
+				"fragment" : "_deps/ds-build/src/imports/application/CMakeFiles/QuickStudioApplication_resources_1.dir/./.rcc/qrc_qmake_QtQuick_Studio_Application.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "_deps/ds-build/src/imports/flowview/CMakeFiles/FlowView_qmlcache.dir/./FlowView_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "_deps/ds-build/src/imports/flowview/CMakeFiles/FlowView_qmlcache.dir/./.rcc/qmlcache/FlowView_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 109,
+				"fragment" : "_deps/ds-build/src/imports/flowview/CMakeFiles/FlowView_resources_1.dir/./FlowView_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 109,
+				"fragment" : "_deps/ds-build/src/imports/flowview/CMakeFiles/FlowView_resources_1.dir/./.rcc/qrc_FlowView_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 115,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelper_resources_1.dir/./QuickStudioLogicHelper_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 115,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelper_resources_1.dir/./.rcc/qrc_qmake_QtQuick_Studio_LogicHelper.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 121,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelper_qmlcache.dir/./QuickStudioLogicHelper_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 121,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelper_qmlcache.dir/./.rcc/qmlcache/QuickStudioLogicHelper_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 127,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelper_resources_2.dir/./QuickStudioLogicHelper_resources_2_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 127,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelper_resources_2.dir/./.rcc/qrc_QuickStudioLogicHelper_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 133,
+				"fragment" : "_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiText_resources_1.dir/./QuickStudioMultiText_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 133,
+				"fragment" : "_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiText_resources_1.dir/./.rcc/qrc_qmake_QtQuick_Studio_MultiText.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 139,
+				"fragment" : "_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiText_qmlcache.dir/./QuickStudioMultiText_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 139,
+				"fragment" : "_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiText_qmlcache.dir/./.rcc/qmlcache/QuickStudioMultiText_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 145,
+				"fragment" : "_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiText_resources_2.dir/./QuickStudioMultiText_resources_2_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 145,
+				"fragment" : "_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiText_resources_2.dir/./.rcc/qrc_QuickStudioMultiText_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 151,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulator_resources_1.dir/./QuickStudioEventSimulator_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 151,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulator_resources_1.dir/./.rcc/qrc_qmake_QtQuick_Studio_EventSimulator.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 157,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulator_qmlcache.dir/./QuickStudioEventSimulator_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 157,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulator_qmlcache.dir/./.rcc/qmlcache/QuickStudioEventSimulator_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 163,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulator_resources_2.dir/./QuickStudioEventSimulator_resources_2_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 163,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulator_resources_2.dir/./.rcc/qrc_QuickStudioEventSimulator_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 169,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/CMakeFiles/QuickStudioEventSystem_resources_1.dir/./QuickStudioEventSystem_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 169,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/CMakeFiles/QuickStudioEventSystem_resources_1.dir/./.rcc/qrc_qmake_QtQuick_Studio_EventSystem.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 175,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/CMakeFiles/QuickStudioEventSystem_qmlcache.dir/./QuickStudioEventSystem_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 175,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/CMakeFiles/QuickStudioEventSystem_qmlcache.dir/./.rcc/qmlcache/QuickStudioEventSystem_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 181,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/CMakeFiles/QuickStudioEventSystem_resources_2.dir/./QuickStudioEventSystem_resources_2_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 181,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/CMakeFiles/QuickStudioEventSystem_resources_2.dir/./.rcc/qrc_QuickStudioEventSystem_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 187,
+				"fragment" : "content/CMakeFiles/content_resources_1.dir/./content_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 187,
+				"fragment" : "content/CMakeFiles/content_resources_1.dir/./.rcc/qrc_qmake_content.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 193,
+				"fragment" : "content/CMakeFiles/content_qmlcache.dir/./content_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 193,
+				"fragment" : "content/CMakeFiles/content_qmlcache.dir/./.rcc/qmlcache/content_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 199,
+				"fragment" : "content/CMakeFiles/content_resources_2.dir/./content_resources_2_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 199,
+				"fragment" : "content/CMakeFiles/content_resources_2.dir/./.rcc/qrc_content_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 205,
+				"fragment" : "imports/Elevia/CMakeFiles/Elevia_resources_1.dir/./Elevia_resources_1_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 205,
+				"fragment" : "imports/Elevia/CMakeFiles/Elevia_resources_1.dir/./.rcc/qrc_qmake_Elevia.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 211,
+				"fragment" : "imports/Elevia/CMakeFiles/Elevia_qmlcache.dir/./Elevia_qmlcache_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 211,
+				"fragment" : "imports/Elevia/CMakeFiles/Elevia_qmlcache.dir/./.rcc/qmlcache/Elevia_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 217,
+				"fragment" : "imports/Elevia/CMakeFiles/Elevia_resources_2.dir/./Elevia_resources_2_autogen/mocs_compilation.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 217,
+				"fragment" : "imports/Elevia/CMakeFiles/Elevia_resources_2.dir/./.rcc/qrc_Elevia_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 218,
+				"fragment" : "/home/amir/Qt/6.5.3/gcc_64/lib/libQt6DBus.so.6.5.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 219,
+				"fragment" : "/home/amir/Qt/6.5.3/gcc_64/lib/libQt6Quick.so.6.5.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 222,
+				"fragment" : "qml/QtQuick/Studio/Components/libQuickStudioComponentsplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 222,
+				"fragment" : "qml/QtQuick/Studio/Effects/libQuickStudioEffectsplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 222,
+				"fragment" : "qml/QtQuick/Studio/Application/libQuickStudioApplicationplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 222,
+				"fragment" : "qml/FlowView/libFlowViewplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 222,
+				"fragment" : "qml/QtQuick/Studio/LogicHelper/libQuickStudioLogicHelperplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 222,
+				"fragment" : "qml/QtQuick/Studio/MultiText/libQuickStudioMultiTextplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 222,
+				"fragment" : "qml/QtQuick/Studio/EventSimulator/libQuickStudioEventSimulatorplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 222,
+				"fragment" : "qml/QtQuick/Studio/EventSystem/libQuickStudioEventSystemplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 225,
+				"fragment" : "qml/content/libcontentplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 225,
+				"fragment" : "qml/Elevia/libEleviaplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 231,
+				"fragment" : "/home/amir/Qt/6.5.3/gcc_64/lib/libQt6QmlModels.so.6.5.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 241,
+				"fragment" : "/home/amir/Qt/6.5.3/gcc_64/lib/libQt6OpenGL.so.6.5.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 243,
+				"fragment" : "_deps/ds-build/src/imports/components/libQuickStudioComponents.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 245,
+				"fragment" : "_deps/ds-build/src/imports/effects_qt6/libQuickStudioEffects.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 247,
+				"fragment" : "_deps/ds-build/src/imports/application/libQuickStudioApplication.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 219,
+				"fragment" : "/home/amir/Qt/6.5.3/gcc_64/lib/libQt6Gui.so.6.5.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 259,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 261,
+				"fragment" : "_deps/ds-build/src/imports/flowview/libFlowView.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 263,
+				"fragment" : "_deps/ds-build/src/imports/logichelper/libQuickStudioLogicHelper.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 265,
+				"fragment" : "_deps/ds-build/src/imports/multitext/libQuickStudioMultiText.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 267,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsimulator/libQuickStudioEventSimulator.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 269,
+				"fragment" : "_deps/ds-build/src/imports/tools/eventsystem/libQuickStudioEventSystem.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 271,
+				"fragment" : "content/libcontent.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 273,
+				"fragment" : "imports/Elevia/libElevia.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 219,
+				"fragment" : "/home/amir/Qt/6.5.3/gcc_64/lib/libQt6Qml.so.6.5.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 285,
+				"fragment" : "/home/amir/Qt/6.5.3/gcc_64/lib/libQt6Network.so.6.5.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 286,
+				"fragment" : "/home/amir/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "EleviaApp",
+	"nameOnDisk" : "EleviaApp",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				4,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				5,
+				12,
+				13,
+				14,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/EleviaApp_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/wifi/wifi.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/wifi/wifi.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 304,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qrc_configuration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 306,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/meta_types/qt6eleviaapp_debug_metatypes.json.gen",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 307,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/eleviaapp_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 311,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qrc_qmake_Main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 312,
+			"path" : "main.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 314,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qmlcache/EleviaApp_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 315,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qmlcache/EleviaApp_main_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 319,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qrc_EleviaApp_raw_qml_0.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 321,
+			"path" : "qtquickcontrols2.conf",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 321,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/qml/Main/qmldir",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/EleviaApp_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qrc_configuration.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/meta_types/qt6eleviaapp_debug_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/eleviaapp_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qrc_qmake_Main.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qmlcache/EleviaApp_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qmlcache/EleviaApp_main_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qrc_EleviaApp_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/EleviaApp_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_GCC_64bit-Debug/meta_types/EleviaApp_json_file_list.txt.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 286,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 218,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6dbus_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 219,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6gui_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 219,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6quick_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 219,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 219,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 219,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 219,
+			"path" : "/home/amir/Qt/6.5.3/gcc_64/metatypes/qt6opengl_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

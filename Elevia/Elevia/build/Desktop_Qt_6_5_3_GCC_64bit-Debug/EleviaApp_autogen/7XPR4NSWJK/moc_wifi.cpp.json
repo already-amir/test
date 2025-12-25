@@ -1,0 +1,67 @@
+{
+    "classes": [
+        {
+            "className": "Wifi",
+            "object": true,
+            "qualifiedClassName": "Wifi",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "wifi_enabled",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "wifi_disabled",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "ssid",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "wifi_connected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "wifi_disconnected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "wifiList",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "name": "wifi_scan_done",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "wifi_error",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "wifi.h",
+    "outputRevision": 68
+}

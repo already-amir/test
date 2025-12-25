@@ -1,0 +1,15 @@
+-rootPath
+/home/amir/Desktop/Elevia/Elevia
+-cmake-output
+-output-file
+/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_EleviaApp.cmake
+-importPath
+/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/qml/Main
+-importPath
+/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/qml
+-importPath
+/home/amir/Qt/6.5.3/gcc_64/./qml
+-qrcFiles
+/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/configuration.qrc
+/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qmake_Main.qrc
+/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/EleviaApp_raw_qml_0.qrc

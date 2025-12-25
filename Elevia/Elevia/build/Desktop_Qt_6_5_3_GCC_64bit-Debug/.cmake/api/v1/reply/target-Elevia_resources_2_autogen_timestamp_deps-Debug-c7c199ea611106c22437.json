@@ -1,0 +1,31 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"imports/Elevia/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Elevia_resources_2_autogen_timestamp_deps::@3fbb209c84999df0ce1b",
+	"isGeneratorProvided" : true,
+	"name" : "Elevia_resources_2_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "imports/Elevia",
+		"source" : "imports/Elevia"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

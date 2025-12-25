@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Elevia_app/">
-    <file alias="Constants.qml">/home/amir/Desktop/test/Elevia_app/Elevia_app/Constants.qml</file>
-    <file alias="EventListModel.qml">/home/amir/Desktop/test/Elevia_app/Elevia_app/EventListModel.qml</file>
-    <file alias="EventListSimulator.qml">/home/amir/Desktop/test/Elevia_app/Elevia_app/EventListSimulator.qml</file>
-  </qresource>
-</RCC>
-

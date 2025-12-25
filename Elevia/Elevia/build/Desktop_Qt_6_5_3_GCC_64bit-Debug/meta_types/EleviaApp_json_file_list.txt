@@ -1,0 +1,1 @@
+/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/EleviaApp_autogen/include/../7XPR4NSWJK/moc_wifi.cpp.json

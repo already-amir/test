@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Main">
+    <file alias="qmldir">/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/qml/Main/qmldir</file>
+  </qresource>
+</RCC>
+

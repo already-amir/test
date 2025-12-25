@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/QtQuick/Studio/EventSimulator">
+    <file alias="qmldir">/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/qml/QtQuick/Studio/EventSimulator/qmldir</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/Elevia/">
+    <file alias="EventListSimulator.qml">/home/amir/Desktop/Elevia/Elevia/imports/Elevia/EventListSimulator.qml</file>
+    <file alias="DirectoryFontLoader.qml">/home/amir/Desktop/Elevia/Elevia/imports/Elevia/DirectoryFontLoader.qml</file>
+    <file alias="Constants.qml">/home/amir/Desktop/Elevia/Elevia/imports/Elevia/Constants.qml</file>
+    <file alias="EventListModel.qml">/home/amir/Desktop/Elevia/Elevia/imports/Elevia/EventListModel.qml</file>
+  </qresource>
+</RCC>
+

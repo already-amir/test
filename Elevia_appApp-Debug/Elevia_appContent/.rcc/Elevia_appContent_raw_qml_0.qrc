@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Elevia_appContent/">
-    <file alias="App.qml">/home/amir/Desktop/test/Elevia_app/Elevia_appContent/App.qml</file>
-    <file alias="Screen01.ui.qml">/home/amir/Desktop/test/Elevia_app/Elevia_appContent/Screen01.ui.qml</file>
-  </qresource>
-</RCC>
-

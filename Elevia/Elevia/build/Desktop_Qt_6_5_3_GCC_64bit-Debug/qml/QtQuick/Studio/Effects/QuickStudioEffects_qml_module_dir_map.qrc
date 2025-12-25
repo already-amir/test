@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/QtQuick/Studio/Effects">/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/qml/QtQuick/Studio/Effects</file>
+
+  </qresource>
+</RCC>

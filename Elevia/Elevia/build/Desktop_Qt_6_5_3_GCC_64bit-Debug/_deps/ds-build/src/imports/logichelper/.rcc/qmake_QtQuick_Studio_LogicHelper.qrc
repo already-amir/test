@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/QtQuick/Studio/LogicHelper">
+    <file alias="qmldir">/home/amir/Desktop/Elevia/Elevia/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/qml/QtQuick/Studio/LogicHelper/qmldir</file>
+  </qresource>
+</RCC>
+

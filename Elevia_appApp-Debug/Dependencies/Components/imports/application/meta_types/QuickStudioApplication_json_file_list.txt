@@ -1,1 +1,0 @@
-/home/amir/Desktop/test/Elevia_appApp-Debug/Dependencies/Components/imports/application/QuickStudioApplication_autogen/include/../EWIEGA46WW/moc_quickstudioapplication.cpp.json
